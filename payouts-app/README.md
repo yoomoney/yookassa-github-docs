@@ -2,8 +2,10 @@
 
 
 Данное приложение необходимо для использования сервиса "Массовые выплаты" без интеграции <https://kassa.yandex.ru/payouts>.  
+Скачайте архив [YMDepositionAgent.zip][], распакуйте, запустите файл такой-то. При первом запуске программа запросит у вас ваши данные и предложит назначить пароль.  
 Протокол выплат с интеграцией расположен по адресу <https://tech.yandex.ru/money/doc/payment-solution/payout/intro-docpage/>.
 
+[YMDepositionAgent.zip]: https://github.com/yandex-money/yandex-money-joinup/blob/master/payouts-app/YMDepositionAgent.zip  
 
 ##Инструкция по использованию##
 
