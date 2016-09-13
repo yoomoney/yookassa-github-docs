@@ -6,11 +6,12 @@
 Кроме того вам надо реализовать программную часть для CheckOrderURL и AvisoURL.
 -->
 <form method="POST" action="https://demomoney.yandex.ru/eshop.xml">
-<!-- Если у вас боевой режим платежей, то замените action="https://money.yandex.ru/eshop.xml" -->
+<!-- Если у вас боевой режим платежей, то action="https://money.yandex.ru/eshop.xml" -->
 
 <!-- ОБЯЗАТЕЛЬНАНЫЕ ПОЛЯ (все параметры яндекс.кассы регистрозависимые) -->
 <input type="hidden" name="shopId" value="впишите-сюда-значение-своего-shopId">
 <input type="hidden" name="scid" value="впишите-сюда-значение-своего-scid">
+
 Идентификатор клиента:<br>
 <input type=text name="customerNumber" size="64" value="client007"><br><br> 
 Сумма (руб.):<br> 
