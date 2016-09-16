@@ -20,7 +20,7 @@
     <input type="hidden" name="shopId" value="впишите-сюда-значение-своего-shopId">
     <input type="hidden" name="scid" value="впишите-сюда-значение-своего-scid">
 
-Обязательными параметрами платежа являются **shopId**, **scid**, **customerNumber** и **sum**, без них платеж работать не будет. Остальные параметры на ваше усмотрение ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/) по параметрам формы).
+Обязательными параметрами платежа являются **shopId**, **scid**, **customerNumber** и **sum**, без них платеж работать не будет. Остальные параметры на ваше усмотрение ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/) по параметрам формы). Для демо и боя shopid один. При этом scid для демо будет один, а для боя другой.
 
 #### Шаг 2. Колбеки checkURL и avisoURL
 
