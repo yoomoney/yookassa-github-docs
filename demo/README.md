@@ -62,7 +62,7 @@
 В своем запросе на ваши checkURL и avisoURL мы передаем следующие параметры:
 > action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, **invoiceId**, customerNumber, **MD5**
 
-Это нужно, чтобы вы сверили MD5 сумму нашу и свою. Если сумма не совпадает, вы должны ответить кодом "1".
+Это нужно, чтобы вы сверили MD5 сумму нашу и свою. Если сумма не совпадает, вы должны ответить кодом "1". См. [документацию](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/).
 
 ###### Формула рассчета MD5 суммы
 > MD5(action;orderSumAmount;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
@@ -87,6 +87,6 @@
 * code="1" - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
 * code="100" - такого заказа нет в магазине (например, срок действия заказа истёк; только для action=checkOrder)
 * code="200" - не удается выполнить разбор полученных параметров (ответ при action=checkOrder и action=paymentAviso)
-* 
+
 _тестирование_  
 Вы должны выполнить успешный платеж любыми методом, это и будет результатом, после которого вам включат боевой режим. В демо доступны: оплата демо.кошельком, оплата демо.картой и демо.наличными. Если работает хотя бы один метод, значит остальные методы тоже будут работать.
