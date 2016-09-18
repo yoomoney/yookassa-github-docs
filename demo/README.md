@@ -75,16 +75,16 @@
 
 ##### Примеры ответов
 
-###### Правильный ответ вашего скрипта checkURL на POST-запрос action=checkOrder
+###### Ответ вашего скрипта checkURL на POST-запрос action=checkOrder
     <?xml version="1.0" encoding="UTF-8"?>
     <checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 
-###### Правильный ответ вашего скрипта avisoURL на POST-запрос action=paymentAviso
+###### Ответ вашего скрипта avisoURL на POST-запрос action=paymentAviso
     <?xml version="1.0" encoding="UTF-8"?>
     <paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 
 ###### Все типы ответов
-* code="0" - такой заказ есть в магазине, можно продложать оплату (action=checkOrder) или магазин принимает оплату по данному заказа (action=paymentAviso)
+* code="0" - такой заказ есть в магазине, можно продложать оплату (action=checkOrder) или магазин принимает оплату по данному заказу (action=paymentAviso)
 * code="1" - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
 * code="100" - такого заказа нет в магазине (например, срок действия заказа истёк; только для action=checkOrder)
 * code="200" - не удается выполнить разбор полученных параметров (ответ при action=checkOrder и action=paymentAviso)
