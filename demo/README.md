@@ -59,19 +59,20 @@
 
 ##### 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso
 
-###### shopPassword
-shopPassword - это пароль, который вы записали в нашей технической анкете при регистрации в Яндекс.Кассе. Данный пароль является частью защитного механизма при передаче данных (это не пароль от Личного Кабинета Яндекс.Кассы или пароль от вашего почтового ящика)
-
-###### Проверка контрольной суммы MD5
 В своем запросе на ваши checkURL и avisoURL мы передаем следующие параметры:
-> action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, invoiceId, customerNumber, MD5
+> action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, **invoiceId**, customerNumber, **MD5**
 
 Это нужно, чтобы вы сверили MD5 сумму нашу и свою. Если сумма не совпадает, вы должны ответить кодом "1".
 
 Формула рассчета MD5 суммы:
-MD5(action;orderSumAmount;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
-Полученный результат переводится в верхний регистр (например, вы получите его в таком виде md5=3F4C861280B12B74D6D6BD5CE3D14680).
-Значение shopPassword, которое мы используем при подсчете MD5, хранится у нас в настройках вашего shopId.
+> MD5(action;orderSumAmount;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
+
+Полученный результат переводится в верхний регистр (например, вы получите его от нас в таком виде md5=3F4C861280B12B74D6D6BD5CE3D14680). Значение shopPassword, которое мы используем при подсчете MD5, хранится у нас в настройках вашего shopId.
+
+* shopPassword - это пароль, который вы записали в нашей технической анкете при регистрации в Яндекс.Кассе; данный пароль является частью защитного механизма при передаче данных (это не пароль от Личного Кабинета Яндекс.Кассы или пароль от вашего почтового ящика);
+* invoiceId - номер платежа в системе Яндекс.Касса (это наш основной идентификатор всех платежей, вы будете видеть его в Личном Кабинете при просмотре списка платежей).
+
+###### Проверка контрольной суммы MD5
 
 ##### Правильный ответ скрипта checkURL на POST-запрос action=checkOrder
     <?xml version="1.0" encoding="UTF-8"?>
