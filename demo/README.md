@@ -3,6 +3,13 @@
 **Инструкция для самописных сайтов**  
 На этой странице вы найдете пошаговое описание тестирования: пример кода платежной формы, описание процесса платежа, рекомендации по скриптам проверки заказа и успеха оплаты, решение ошибок при тестировании, презентацию процесса оплаты методом "оплатить через яндекс", ссылки на файлы дизайна, раздел FAQ и Рекомендации.
 
+##### Все ссылки
+* [Документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/)
+* Описание [action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)
+* Описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)
+* [Сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/)
+* [Работающая платежная страница в демо](https://demomoney.yandex.ru/eshop.xml?=shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber) (можно провести оплату демо деньгами и посмотреть на процесс)
+
 ---
 
 ### Тестирование
