@@ -9,7 +9,7 @@
 * [Документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/) по протоколу Яндекс.Кассы;
   * описание [action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/) (проверка наличия заказа);
   * описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/) (уведомление о переводе оплаты);
-  * [сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/)
+  * [сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/);
 * Презентация кнопки ["Заплати через Яндекс"](https://kassa.yandex.ru/pay_by_yandex) (описание сценария оплаты, повышающего удобство оплаты и конверсию платежей).
 
 ---
