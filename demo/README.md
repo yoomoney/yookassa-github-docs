@@ -4,7 +4,7 @@
 На этой странице вы найдете пошаговое описание тестирования: пример кода платежной формы, описание процесса платежа, рекомендации по скриптам проверки заказа и успеха оплаты, решение ошибок при тестировании, презентацию процесса оплаты методом "оплатить через яндекс", ссылки на файлы дизайна, раздел FAQ и Рекомендации.
 
 ##### Все ссылки
-* [Документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/)
+* [Документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/) по протоколу Яндекс.Кассы
   * описание [action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)
   * описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)
   * [сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/)
