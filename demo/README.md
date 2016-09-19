@@ -10,6 +10,7 @@
   * описание [action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/) _(проверка наличия заказа)_;
   * описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/) _(уведомление о переводе оплаты)_;
   * [сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/);
+  * [cписок способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/);
 * Презентация кнопки ["Заплати через Яндекс"](https://kassa.yandex.ru/pay_by_yandex) _(описание сценария оплаты, повышающего удобство оплаты и конверсию платежей)_.
 
 ---
@@ -23,7 +24,8 @@
 
 1. Создайте платежную форму, прописав в ней ваши **shopId** и **scid**;
 2. Создайте скрипты для обработки наших запросов (скрипт checkURL и скрипт avisoURL);  
-**2.1** Проверьте корректность сверки MD5-суммы и коды ответов ваших checkURL и avisoURL;
+**2.1** Проверьте корректность сверки MD5-суммы и коды ответов ваших checkURL и avisoURL;  
+**2.2** Как определить каким методом была произведена оплата (яндекс.кошелек, карты и т.д.);  
 3. Выполните тестирование оплаты;
 4. После успешной оплаты в демо-режиме, напишите нам и мы переведем вас в боевой режим.
 5. Если при тестировании возникнут ошибки и информации на данной странице будет не достаточно, напишите нам (какая информация нужна для диагностики, см. в инструкции ниже).
@@ -97,6 +99,9 @@
 * code="1" - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
 * code="100" - такого заказа нет в магазине (например, срок действия заказа истёк; только для action=checkOrder)
 * code="200" - не удается выполнить разбор полученных параметров (ответ при action=checkOrder и action=paymentAviso)
+
+##### 2.2. Определение типа платежа, которым была произведена оплата
+В запросах checkOrder и paymentAviso мы передаем вам параметр paymentType. Например, paymentType=PC. Это значит, что оплата производится через яндекс.кошелек. [Список способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/).
 
 #### Шаг 3. Тестирование оплаты
 
