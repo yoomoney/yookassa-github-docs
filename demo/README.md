@@ -9,7 +9,7 @@
 * Описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)
 * [Сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/)
 * [Платежная страница в демо](https://demomoney.yandex.ru/eshop.xml?=shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber) (можно провести оплату демо деньгами и посмотреть на процесс)
-* Кнопка ["Заплати через Яндекс"](https://kassa.yandex.ru/pay_by_yandex), описание сценария оплаты
+* Кнопка ["Заплати через Яндекс"](https://kassa.yandex.ru/pay_by_yandex), описание сценария оплаты, повышающего удобство оплаты и конверсию платежей.
 
 ---
 
@@ -30,8 +30,8 @@
 #### Шаг 1. Создание платежной формы
 Файл "пример платежной формы.html" содержит необходимый код, чтобы выполнить тестовый платеж. Скопируйте код к себе, отредактируйте, прописав свои значения **shopId** и **scid**. В файле примера это будут следующие строки:
 
-    <input type="hidden" name="shopId" value="впишите-сюда-значение-своего-shopId">
-    <input type="hidden" name="scid" value="впишите-сюда-значение-своего-scid">
+    <input name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden">
+    <input name="scid" value="впишите-сюда-значение-своего-scid-для-демо-режима" type="hidden">
 
 Вставьте код в html-документ или добавьте на страницу своего сайта. Минимальная платежная форма готова.
 
