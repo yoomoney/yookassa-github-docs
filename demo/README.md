@@ -102,7 +102,7 @@
 * code="200" - не удается выполнить разбор полученных параметров (ответ при action=checkOrder и action=paymentAviso)
 
 ##### 2.2. Определение типа платежа, которым была произведена оплата
-В запросах checkOrder и paymentAviso мы передаем вам параметр paymentType. Например, paymentType=PC, это значит, что оплата производится через яндекс.кошелек. [Список способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/).
+Если вам нужно понимать, каким методом оплачивает плательщик, обратите внимание, что в запросах checkOrder и paymentAviso мы передаем вам параметр paymentType. Например, paymentType=PC (это значит, что оплата производится через яндекс.кошелек; [список способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/)).
 
 #### Шаг 3. Тестирование оплаты
 
