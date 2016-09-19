@@ -1,24 +1,18 @@
-<form method="POST" action="https://demomoney.yandex.ru/eshop.xml">
-<!-- Если у вас боевой режим платежей, то action="https://money.yandex.ru/eshop.xml" -->
+<!-- Здесь предоставлен минимальный код, чтобы выполнить тестовый платеж в демо режиме.
+Скопируйте код к себе, отредактируйте, прописав свои значения shopId и scid.
+Вставьте код в html-документ или добавьте на страницу своего сайта. 
+Обязательными параметрами платежа являются shopId, scid, customerNumber и sum. Без этих параметров платеж не будет работать.
+Имена параметров регистрозависимы.
+-->
 
-<!-- ОБЯЗАТЕЛЬНАНЫЕ ПОЛЯ (все параметры яндекс.кассы регистрозависимые) -->
+<form method="POST" action="https://demomoney.yandex.ru/eshop.xml">
+
 <input type="hidden" name="shopId" value="впишите-сюда-значение-своего-shopId">
 <input type="hidden" name="scid" value="впишите-сюда-значение-своего-scid-для-демо-режима">
 
 <!-- Идентификатор вашего покупателя -->
-<input type=text name="customerNumber" size="64" value="Клиент 007"><br> 
+<input type="hidden" name="customerNumber" value="Клиент 007">
 
 <!-- Сумма покупки (руб.) -->
-<input type=text name="sum" size="64" value="10.00"><br>
-
-<!-- необязательные поля (все параметры яндекс.кассы регистрозависимые)   
-# orderNumber, необязательное поле, можно использовать, если вам нужно передавать свой номер заказа на нашу платежну страницу
-<input name="orderNumber" value="Заказ N777" type="hidden"/> 
-
-# Поле номер телефона, если его передать, то оно будет предзаполнено на странице оплаты Яндекс.Кассы
-<input name="cps_phone" value="79110000000" type="hidden"/> 
-
-# Поле электронного адреса плательщика, если его передать, то оно будет предзаполнено на странице оплаты Яндекс.Кассы
-<input name="cps_email" value="user@domain.com" type="hidden"/> -->
-
-<br><input type=submit value="Оплатить"></form>
+<input type="hidden" name="sum" value="10.00">
+<input type="submit" value="Оплатить"></form>
