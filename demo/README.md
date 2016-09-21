@@ -104,7 +104,7 @@
     <?xml version="1.0" encoding="UTF-8"?>
     <paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 
-###### Все типы ответов
+###### Все коды ответов
 * code="0" - такой заказ есть в магазине, можно продолжать оплату (action=checkOrder) или магазин принимает оплату по данному заказу (action=paymentAviso)
 * code="1" - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
 * code="100" - такого заказа нет в магазине (например, срок действия заказа истёк; только для action=checkOrder)
