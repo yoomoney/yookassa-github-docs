@@ -2,6 +2,10 @@
 ========================================
 **#инструкция для самописных сайтов**
 
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
 ### Требования к интеграции
 * Вы должны [зарегистрироваться в Яндекс.Кассе](https://money.yandex.ru/joinups/) и заполнить нашу [техническую анкету](https://tech.yandex.ru/money/doc/payment-solution/shop-config/parameters-docpage/);
 * Получить от нас идентификаторы **shopId** и **scid**;
