@@ -19,8 +19,8 @@
 
 ##### Демо на примере нашего специального магазина
 
-| Метод оплаты        | Код           | Cool  |
-| ------------- |-------------:|:-----:|
+| Метод оплаты                | Код вызова         | Ссылка на демо  |
+| --------------------------- | ------------------ |:---------------:|
 | "Заплати через Яндекс"      | `paymentType=""`   |  [демо](https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber) |
 | Оплата яндекс.кошельком     | `paymentType="PC"` |  [демо](https://demomoney.yandex.ru/cashdesk/2.0/?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=PC) |
 | Оплата банковской картой    | `paymentType="AC"` |  [демо](https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=AC) |
