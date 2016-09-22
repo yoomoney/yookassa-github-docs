@@ -17,8 +17,15 @@
   * [как защитить сумму платежа от подмены](#21-Проверка-md5-суммы-при-ответах-на-запросы-checkorder-и-paymentaviso-документация)
   * [коды ответов на платежные запросы Яндекс.Кассы](#Все-коды-ответов)
 
-##### Демо
-* [Демонстрационная платежная страница](https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber) _(здесь можно провести оплату демо деньгами и посмотреть на процесс; тестовый кошелек с демо деньгами и демо-карту, см. в разделе [3. Тестирование оплаты](#Шаг-3-Тестирование-оплаты))_;
+##### Демо на примере нашего специального магазина
+
+Обратите внимание, что в демо среде идет постоянный процесс разработки, поэтому в конкретный момент времени один из методов может быть не рабочим.
+* Рекомендуемый метод "Заплати через Яндекс" (`paymentType=""`), выбор метода оплаты ... [демо](https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber)
+* Оплата кошельком [демо] (`paymentType="PC"`)(https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=PC)
+* Оплата банковской картой [демо] (`paymentType="AC"`)(https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=AC)
+* Оплата наличными в терминал [демо] (`paymentType="GP"`)(https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=GP)
+
+_(здесь можно провести оплату демо деньгами и посмотреть на процесс; тестовый кошелек с демо деньгами и демо-карту, см. в разделе [3. Тестирование оплаты](#Шаг-3-Тестирование-оплаты))_;
 * Презентация кнопки ["Заплати через Яндекс"](https://kassa.yandex.ru/pay_by_yandex) _(описание сценария оплаты, повышающего удобство оплаты и конверсию платежей)_.
 
 ##### Документация
