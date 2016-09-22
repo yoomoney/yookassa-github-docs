@@ -153,11 +153,12 @@
 
 Здесь, на примере нашего специального магазина (shopid=72491, scid=541855), можно провести оплату демо деньгами, посмотреть на процесс и результат. Обратите внимание, что в демо среде идет постоянный процесс разработки, поэтому, в исключительных случаях, в конкретный момент времени один из методов может быть не доступен.
 
-| Метод оплаты                | Код вызова         | Ссылка на демо                 |
-| --------------------------- | ------------------ |:------------------------------:|
-| **"Заплати через Яндекс"**  | `paymentType=""`   |  [демо](https://goo.gl/QBgppN) |
-| Оплата яндекс.кошельком     | `paymentType="PC"` |  [демо](https://demomoney.yandex.ru/cashdesk/2.0/?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=PC) |
-| Оплата банковской картой    | `paymentType="AC"` |  [демо](https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=AC) |
-| Оплата наличными в терминал | `paymentType="GP"`   | [демо] (https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%20customerNumber&paymentType=GP) |
+| Метод оплаты и ссылка на демо                         | Код вызова         |
+| ----------------------------------------------------- | ------------------ |
+| **["Заплатить через Яндекс"](https://goo.gl/QBgppN)** | `paymentType=""`   |
+| [Оплата яндекс.кошельком](https://goo.gl/Gc20LK)      | `paymentType="PC"` |
+| [Оплата банковской картой](https://goo.gl/ZblF7F)     | `paymentType="AC"` |
+| [Оплата наличными в терминал](https://goo.gl/ZYiuaN)  | `paymentType="GP"` |
 
+##### Заплатить через Яндекс
 * Презентация процесса ["Заплати через Яндекс"](https://kassa.yandex.ru/pay_by_yandex) _(описание сценария оплаты, повышающего удобство оплаты и конверсию платежей).
