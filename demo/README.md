@@ -68,9 +68,6 @@
 
 * На ваш checkURL мы отправляем POST-запрос ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)), который проверяет наличие заказа в вашей системе.
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
-* В HTTP заголовке (header) ответа должно быть:
- * `HTTP/1.0 200`
- * `Content-Type: application/xml`
 
 ##### Описание процесса платежа
 1. Плательщик нажимает "оплатить" на вашем сайте.
@@ -105,14 +102,18 @@
 * значение shopPassword, которое мы используем при подсчете MD5, хранится у нас в настройках вашего shopId;
 * invoiceId - номер платежа в системе Яндекс.Касса (это наш основной идентификатор всех платежей; в Личном Кабинете при просмотре списка платежей вы будете видеть для каждого платежа свой уникальный номер).
 
-##### Примеры ответов колбеков
+##### Примеры ответов колбеков checkURL и avisoURL
 
-###### Ответ вашего скрипта checkURL на POST-запрос action=checkOrder
+###### В HTTP заголовке (header) ответа должно быть
+ * `HTTP/1.0 200`
+ * `Content-Type: application/xml`
+
+###### В теле (body) ответа вашего скрипта checkURL на POST-запрос action=checkOrder должно быть:
 ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 ```
-###### Ответ вашего скрипта avisoURL на POST-запрос action=paymentAviso
+###### В теле (body) ответ вашего скрипта avisoURL на POST-запрос action=paymentAviso должно быть:
 ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
