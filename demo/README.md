@@ -69,8 +69,8 @@
 * На ваш checkURL мы отправляем POST-запрос ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)), который проверяет наличие заказа в вашей системе.
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
 * В HTTP заголовке (header) ответа должно быть:
- * HTTP/1.0 200
- * Content-Type: application/xml
+ * `HTTP/1.0 200`
+ * `Content-Type: application/xml`
 
 ##### Описание процесса платежа
 1. Плательщик нажимает "оплатить" на вашем сайте.
