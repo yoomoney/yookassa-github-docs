@@ -115,10 +115,10 @@
     <paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 ```
 ###### Все коды ответов
-* code="0" - такой заказ есть в магазине, можно продолжать оплату (action=checkOrder) или магазин принимает оплату по данному заказу (action=paymentAviso)
-* code="1" - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
-* code="100" - такого заказа нет в магазине (например, срок действия заказа истёк; только для action=checkOrder)
-* code="200" - не удается выполнить разбор полученных параметров (ответ при action=checkOrder и action=paymentAviso)
+* `code="0"` - такой заказ есть в магазине, можно продолжать оплату (action=checkOrder) или магазин принимает оплату по данному заказу (action=paymentAviso)
+* `code="1"` - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
+* `code="100"` - такого заказа нет в магазине (например, срок действия заказа истёк; только для action=checkOrder)
+* `code="200"` - не удается выполнить разбор полученных параметров (ответ при action=checkOrder и action=paymentAviso)
 
 ###### Пример CURL, эмулирующий наш запрос на ваш checkURL
     сurl -kvd 'action=checkOrder&shopId=100500&scid=555777&customerNumber=32&cdd_pan_mask=444444|4448&orderNumber=38&paymentType=AC&invoiceId=2000000833650&shopSumAmount=100.00&md5=2A409E2B81D7A77A2B745A2F62916C42&orderSumAmount=3200.00&cdd_exp_date=1217&paymentPayerCode=4100322062290&cdd_rrn=&external_id=deposit&requestDatetime=2016-07-11T15:29:35.438+03:00&depositNumber=tNGTnJmP7sPdWnPiSeOXLUFLB5MZ.001f.201607&cps_user_country_code=PL&orderCreatedDatetime=2016-07-11T15:29:35.360+03:00&sk=yed009c9df4e4f0a47d15e20d4af3231e&shopSumBankPaycash=1003&shopSumCurrencyPaycash=10643&rebillingOn=false&orderSumBankPaycash=1003&cps_region_id=213&orderSumCurrencyPaycash=10643&merchant_order_id=38_110716152918_00000_64759&unilabel=1f15a4dd-0009-5000-8000-0000116d476c&yandexPaymentId=2570052456918' https://yousite/checkURL-script.php
