@@ -90,7 +90,7 @@
 В своем запросе на ваши checkURL и avisoURL мы передаем следующие параметры:
 > action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, **invoiceId**, customerNumber, **MD5**
 
-Это нужно, чтобы вы сверили MD5 сумму нашу и свою. Если сумма не совпадает, вы должны ответить кодом "1".
+Это нужно, чтобы вы сверили MD5 сумму нашу и свою. Если сумма не совпадает, вы должны ответить кодом "1". Данный механизм предназначен для защиты значения суммы оплаты от подделки (а также значение customerNumber), после того, как эти параметры передаются из вашей формы в нашу платежную систему.
 
 ###### Формула рассчета MD5 суммы
 > MD5(action;orderSumAmount;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
