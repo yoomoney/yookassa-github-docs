@@ -50,9 +50,10 @@
 #### Шаг 1. Создание платежной формы
 Файл "[пример платежной формы.html](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/пример%20платежной%20формы.html)" содержит необходимый код, чтобы выполнить тестовый платеж. Скопируйте код к себе, отредактируйте, прописав свои значения **shopId** и **scid**. В файле примера это будут следующие строки:
 
+```html
     <input name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden">
     <input name="scid" value="впишите-сюда-значение-своего-scid-для-демо-режима" type="hidden">
-
+```
 Вставьте код в html-документ или добавьте на страницу своего сайта. Минимальная платежная форма готова.
 
 Обратите внимание:
@@ -104,13 +105,15 @@
 ##### Примеры ответов колбеков
 
 ###### Ответ вашего скрипта checkURL на POST-запрос action=checkOrder
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
-
+```
 ###### Ответ вашего скрипта avisoURL на POST-запрос action=paymentAviso
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
-
+```
 ###### Все коды ответов
 * code="0" - такой заказ есть в магазине, можно продолжать оплату (action=checkOrder) или магазин принимает оплату по данному заказу (action=paymentAviso)
 * code="1" - полученная MD5-сумма не совпадает с MD-суммой на стороне магазина (ответ при action=checkOrder и action=paymentAviso)
