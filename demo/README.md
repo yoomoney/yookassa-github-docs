@@ -86,7 +86,7 @@
 * На ваш checkURL мы отправляем POST-запрос ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)), который проверяет наличие заказа в вашей системе.
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
 
-##### **Шаг 2.1.** Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
+##### Шаг 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
 
 В своем запросе на ваши checkURL и avisoURL мы передаем следующие параметры:
 > action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, **invoiceId**, customerNumber, **MD5**
@@ -102,7 +102,7 @@
 * значение shopPassword, которое мы используем при подсчете MD5, хранится у нас в настройках вашего shopId;
 * invoiceId - номер платежа в системе Яндекс.Касса (это наш основной идентификатор всех платежей; в Личном Кабинете при просмотре списка платежей вы будете видеть для каждого платежа свой уникальный номер).
 
-##### **Шаг 2.2.** Примеры ответов колбеков checkURL и avisoURL
+##### Шаг 2.2. Примеры ответов колбеков checkURL и avisoURL
 
 ###### В HTTP заголовке (header) ответа должно быть
  * `HTTP/1.0 200`
@@ -129,7 +129,7 @@
 сurl -kvd 'action=checkOrder&shopId=100500&scid=555777&customerNumber=32&cdd_pan_mask=444444|4448&orderNumber=38&paymentType=AC&invoiceId=2000000833650&shopSumAmount=100.00&md5=2A409E2B81D7A77A2B745A2F62916C42&orderSumAmount=3200.00&cdd_exp_date=1217&paymentPayerCode=4100322062290&cdd_rrn=&external_id=deposit&requestDatetime=2016-07-11T15:29:35.438+03:00&depositNumber=tNGTnJmP7sPdWnPiSeOXLUFLB5MZ.001f.201607&cps_user_country_code=PL&orderCreatedDatetime=2016-07-11T15:29:35.360+03:00&sk=yed009c9df4e4f0a47d15e20d4af3231e&shopSumBankPaycash=1003&shopSumCurrencyPaycash=10643&rebillingOn=false&orderSumBankPaycash=1003&cps_region_id=213&orderSumCurrencyPaycash=10643&merchant_order_id=38_110716152918_00000_64759&unilabel=1f15a4dd-0009-5000-8000-0000116d476c&yandexPaymentId=2570052456918' https://yousite/checkURL-script.php
 ```
 
-##### *Шаг 2.3.* Определение типа платежа, которым была произведена оплата
+##### Шаг 2.3. Определение типа платежа, которым была произведена оплата
 Если вам нужно понимать, каким методом оплачивает плательщик, обратите внимание, что в запросах checkOrder и paymentAviso мы передаем вам параметр paymentType. Например, paymentType=PC (это значит, что оплата производится через яндекс.кошелек; [список способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/)).
 
 #### Шаг 3. Тестирование оплаты
