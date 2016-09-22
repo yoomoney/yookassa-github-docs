@@ -25,11 +25,11 @@
   * описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/) _(уведомление о переводе оплаты)_;
   * [сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/) _(защита информации по заказу от подмены суммы платежа)_;
   * [cписок способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/);
-  * [таблица лимитов платежных методов](https://money.yandex.ru/doc.xml?id=527483&ncrnd=6790);
+  * [таблица лимитов платежных методов](https://money.yandex.ru/doc.xml?id=527483&ncrnd=6790).
 
 ---
 
-### Шаги интеграция
+### Шаги интеграции
 
 Для начала интеграции необходимы **shopId** и **scid**. Вы получите их в письме, после того, как менеджер Яндекс.Кассы выполнит процесс вашей регистрации:
 > **shopId** (идентификатор магазина) = **100500**  
