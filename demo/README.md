@@ -86,7 +86,7 @@
 * На ваш checkURL мы отправляем POST-запрос ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)), который проверяет наличие заказа в вашей системе.
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
 
-##### 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
+##### Шаг 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
 
 В своем запросе на ваши checkURL и avisoURL мы передаем следующие параметры:
 > action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, **invoiceId**, customerNumber, **MD5**
@@ -102,7 +102,7 @@
 * значение shopPassword, которое мы используем при подсчете MD5, хранится у нас в настройках вашего shopId;
 * invoiceId - номер платежа в системе Яндекс.Касса (это наш основной идентификатор всех платежей; в Личном Кабинете при просмотре списка платежей вы будете видеть для каждого платежа свой уникальный номер).
 
-##### 2.2. Примеры ответов колбеков checkURL и avisoURL
+##### Шаг 2.2. Примеры ответов колбеков checkURL и avisoURL
 
 ###### В HTTP заголовке (header) ответа должно быть
  * `HTTP/1.0 200`
