@@ -28,6 +28,9 @@
   * [cписок способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/);
   * [таблица лимитов платежных методов](https://money.yandex.ru/doc.xml?id=527483&ncrnd=6790).
 
+##### Презентации
+* [Заплати через Яндекс](#Заплатить-через-Яндекс) (сценарий оплаты с максимальным удобством и конверсией)
+* [Все методы оплаты](https://kassa.yandex.ru/payments#cards) (видео процесса оплаты и pdf презентация по каждому методу)
 ---
 
 ### Шаги интеграции
