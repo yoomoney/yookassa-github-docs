@@ -171,6 +171,15 @@ curl -kvd 'action=checkOrder&shopId=100500&scid=555777&customerNumber=32&cdd_pan
 | [Оплата банковской картой](https://goo.gl/ZblF7F)     | `paymentType="AC"` |
 | [Оплата наличными в терминал](https://goo.gl/ZYiuaN)  | `paymentType="GP"` |
 
+##### Как сделаны ссылки в этой таблице?
+Кроме того, что вы можете передавать параметры из своей формы POST-запросом, есть альтернативынй метод, когда формируется платежная ссылка, нажав на которую происходит открытие платежной страницы с оплатой конкретного заказа. Если взять за пример первую ссылку в таблице, то она выглядит так:
+
+```html
+https://demomoney.yandex.ru/eshop.xml?shopid=72491&scid=541855&sum=100.00&customerNumber=test
+```
+
+[Подробнее](https://tech.yandex.ru/money/doc/payment-solution/payment-process/payments-qr-docpage/) об этом методе.
+
 #### Заплатить через Яндекс
 
 Презентация: [>>>](https://kassa.yandex.ru/pay_by_yandex)  
