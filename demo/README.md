@@ -73,7 +73,7 @@
 ### Заплатить через Яндекс
 
 Рекомендуемые нами сценарий оплаты:
-* ([презентация](https://kassa.yandex.ru/pay_by_yandex);
+* [презентация](https://kassa.yandex.ru/pay_by_yandex);
 * файл дизайна кнопки: [pay_by_yandex_btn.zip](https://kassa.yandex.ru/files/pay_by_yandex_btn.zip);
 * [посмотреть "Оплатить через Яндекс" в дествиии](#Демонстрационный-стенд) и сравнить с другими вариантами оплаты.
 
