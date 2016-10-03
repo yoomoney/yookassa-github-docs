@@ -8,29 +8,15 @@
 * Ваш сайт должен поддерживать работу по HTTPS протоколу;
 * Ваши скрипты checkURL и avisoURL должны [корректно](#Шаг-22-Примеры-ответов-колбеков-checkurl-и-avisourl) отвечать на наши запросы.
 
-#### Вашему программисту минимально понадобится
-
+#### Вашему программисту понадобится
 * [Пример html-кода простой платежной формы](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/пример%20платежной%20формы.html)
 * [Объяснение процесса платежа](#Описание-процесса-платежа)
 * [Рекомендации по скриптам взаимодействия (checkURL и avisoURL)](#Шаг-2-Скрипты-checkurl-и-avisourl-колбеки)
-  * [формат ответов](#Шаг-22-Примеры-ответов-колбеков-checkurl-и-avisourl)
-  * [как защитить сумму платежа от подмены](#Шаг-21-Проверка-md5-суммы-при-ответах-на-запросы-checkorder-и-paymentaviso-документация)
-  * [коды ответов на платежные запросы Яндекс.Кассы](#Все-коды-ответов)
-  * [CURL-пример checkOrder запроса к вашему checkURL](#Пример-curl-эмулирующий-наш-запрос-на-ваш-checkurl)
-* [Демонстрационный стенд](#Демонстрационный-стенд)
 
-#### Документация
-
-* [Документация](https://tech.yandex.ru/money/doc/payment-solution/payment-form/payment-form-http-docpage/) по протоколу Яндекс.Кассы;
-  * описание [action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/) _(проверка наличия заказа)_;
-  * описание [action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/) _(уведомление о переводе оплаты)_;
-  * [сверка MD5-суммы](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/) _(защита информации по заказу от подмены суммы платежа)_;
-  * [cписок способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/);
-  * [таблица лимитов платежных методов](https://money.yandex.ru/doc.xml?id=527483&ncrnd=6790).
-
-#### Презентации
+#### Демо и презентации
 * [Заплати через Яндекс](#Заплатить-через-Яндекс) _(сценарий оплаты с максимальным удобством и конверсией)_
 * [Все методы оплаты](https://kassa.yandex.ru/payments#cards) _(видео процесса оплаты и pdf-презентация по каждому методу)_
+* [Демонстрационный стенд](#Демонстрационный-стенд) _(вы можете попробовать сами процесс оплаты в действии)_
 
 ---
 
