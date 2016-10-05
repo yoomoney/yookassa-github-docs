@@ -14,10 +14,6 @@
 * [Объяснение процесса платежа](#Описание-процесса-платежа)
 * [Рекомендации по скриптам взаимодействия (checkURL и avisoURL)](#Шаг-2-Скрипты-checkurl-и-avisourl-колбеки)
 
-```diff
-+ this will be highlighted in green
-- this will be highlighted in red
-```
 ---
 
 ### Шаги интеграции
