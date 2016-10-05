@@ -72,14 +72,14 @@
 * На ваш checkURL мы отправляем POST-запрос ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)), который проверяет наличие заказа в вашей системе.
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
 
-### Шаг 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
+#### Шаг 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
 
 В своем запросе на ваши checkURL и avisoURL мы передаем следующие параметры:
 > action, orderSumAmount, orderSumCurrencyPaycash, orderSumBankPaycash, shopId, **invoiceId**, customerNumber, **MD5**
 
 Это нужно, чтобы вы сверили MD5 сумму нашу и свою. Если сумма не совпадает, вы должны ответить кодом "1". Данный механизм предназначен для защиты значения суммы оплаты от подделки (а также значение customerNumber), после того, как эти параметры передаются из вашей формы в нашу платежную систему.
 
-###### Формула рассчета MD5 суммы
+##### Формула рассчета MD5 суммы
 > MD5(action;orderSumAmount;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
 
 Полученный результат переводится в верхний регистр (например, вы получите его от нас в таком виде md5=3F4C861280B12B74D6D6BD5CE3D14680). Подробности:
@@ -88,7 +88,7 @@
 * значение shopPassword, которое мы используем при подсчете MD5, хранится у нас в настройках вашего shopId;
 * invoiceId - номер платежа в системе Яндекс.Касса (это наш основной идентификатор всех платежей; в Личном Кабинете при просмотре списка платежей вы будете видеть для каждого платежа свой уникальный номер).
 
-### Шаг 2.2. Примеры ответов колбеков checkURL и avisoURL
+#### Шаг 2.2. Примеры ответов колбеков checkURL и avisoURL
 
 ##### В HTTP заголовке (header) ответа должно быть:
  * `HTTP/1.0 200`
@@ -123,7 +123,7 @@ curl -kvd 'action=checkOrder&shopId=100500&scid=555777&customerNumber=32&cdd_pan
 &unilabel=1f15a4dd-0009-5000-8000-0000116d476c&yandexPaymentId=2570052456918' https://yousite/checkURL-script.php
 ```
 
-### Шаг 2.3. Определение типа платежа, которым была произведена оплата
+#### Шаг 2.3. Определение типа платежа, которым была произведена оплата
 Если вам нужно понимать, каким методом оплачивает плательщик, обратите внимание, что в запросах checkOrder и paymentAviso мы передаем вам параметр paymentType. Например, paymentType=PC (это значит, что оплата производится через яндекс.кошелек; [список способов оплаты](https://tech.yandex.ru/money/doc/payment-solution/reference/payment-type-codes-docpage/)).
 
 ### Шаг 3. Тестирование оплаты
