@@ -95,12 +95,16 @@
 ##### В HTTP заголовке (header) ответа должно быть:
 `HTTP/1.0 200`  
 `Content-Type: application/xml`
+```diff
+- Внимание, любой другой код HTTP (301|302|404|403|500|503 и т.д.) не будет считаться корректным ответом
+- и платеж будет завершаться ошибкой
+```
 
-##### Ответ скрипта checkURL на POST-запрос action=checkOrder:
+##### Формат ответа скрипта checkURL на POST-запрос action=checkOrder:
 `<?xml version="1.0" encoding="UTF-8"?>`  
 `<checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>`
 
-##### Ответ скрипта avisoURL на POST-запрос action=paymentAviso:
+##### Формат ответа скрипта avisoURL на POST-запрос action=paymentAviso:
 `<?xml version="1.0" encoding="UTF-8"?>`  
 `<paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>`
 
