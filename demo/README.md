@@ -72,6 +72,7 @@
 
 При регистрации в Яндекс.Кассе вы заполняли техническую анкету, где должны были указать ссылки на ваши скрипты, которые будут обрабатывать наши запросы. У нас они называются checkURL и avisoURL. URL этих скриптов прописаны в настройках вашего shopId.
 
+* [Пример кода](https://github.com/yandex-money/yandex-money-kassa-example/blob/master/src/YaMoneyCommonHttpProtocol.php#L102) на PHP;
 * На ваш checkURL мы отправляем POST-запрос, который проверяет наличие заказа в вашей системе ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)).
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
 
