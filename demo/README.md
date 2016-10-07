@@ -72,7 +72,7 @@
 
 При регистрации в Яндекс.Кассе вы заполняли техническую анкету, где должны были указать ссылки на ваши скрипты, которые будут обрабатывать наши запросы. У нас они называются checkURL и avisoURL. URL этих скриптов прописаны в настройках вашего shopId.
 
-* На ваш checkURL мы отправляем POST-запрос ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)), который проверяет наличие заказа в вашей системе.
+* На ваш checkURL мы отправляем POST-запрос, который проверяет наличие заказа в вашей системе ([action=checkOrder](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-check-docpage/)).
 * На ваш avisoURL мы отправляем POST-запрос о том, что ваш покупатель оплатил заказ ([action=paymentAviso](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-aviso-docpage/)).
 
 #### Шаг 2.1. Проверка MD5 суммы при ответах на запросы checkOrder и paymentAviso ([документация](https://tech.yandex.ru/money/doc/payment-solution/payment-notifications/payment-notifications-http-docpage/))
