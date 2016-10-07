@@ -97,15 +97,13 @@
 `Content-Type: application/xml`
 
 ##### Ответ скрипта checkURL на POST-запрос action=checkOrder:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
-```
+`<?xml version="1.0" encoding="UTF-8"?>`  
+`<checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>`
+
 ##### Ответ скрипта avisoURL на POST-запрос action=paymentAviso:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
-```
+`<?xml version="1.0" encoding="UTF-8"?>`  
+`<paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>`
+
 ##### Коды ответа
 | Код         | action=checkOrder                             | action=paymentAviso                           |
 | ----------- | --------------------------------------------- | --------------------------------------------- |
