@@ -6,7 +6,7 @@
 
 ### Требования к интеграции
 * [Зарегистрируйтесь в Яндекс.Кассе](https://money.yandex.ru/joinups/) (доступно только для юридических лиц и ИП);
-* Заполните нашу [техническую анкету](https://tech.yandex.ru/money/doc/payment-solution/shop-config/parameters-docpage/);
+* Заполните нашу [техническую анкету](https://tech.yandex.ru/money/doc/payment-solution/shop-config/intro-docpage/);
 * Получите от нас идентификаторы **shopId** и **scid**;
 * Ваш сайт должен поддерживать работу по HTTPS протоколу;
 * Ваши скрипты checkURL и avisoURL должны [корректно](#Шаг-22-Примеры-ответов-колбеков-checkurl-и-avisourl) отвечать на наши запросы.
