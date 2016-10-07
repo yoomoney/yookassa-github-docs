@@ -93,8 +93,8 @@
 #### Шаг 2.2. Примеры ответов колбеков checkURL и avisoURL
 
 ##### В HTTP заголовке (header) ответа должно быть:
-`HTTP/1.0 200  
-Content-Type: application/xml`
+`HTTP/1.0 200`  
+`Content-Type: application/xml`
 
 ##### Ответ скрипта checkURL на POST-запрос action=checkOrder:
 ```xml
