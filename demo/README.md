@@ -96,17 +96,18 @@
 `HTTP/1.0 200`
 `Content-Type: application/xml`
 
-##### В теле (body) ответа вашего скрипта checkURL на POST-запрос action=checkOrder должно быть:
+##### Ответ скрипта checkURL на POST-запрос action=checkOrder:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <checkOrderResponse performedDatetime="2011-05-04T20:38:01.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 ```
-##### В теле (body) ответ вашего скрипта avisoURL на POST-запрос action=paymentAviso должно быть:
+##### Ответ скрипта avisoURL на POST-запрос action=paymentAviso:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <paymentAvisoResponse performedDatetime="2011-05-04T20:38:11.000+04:00" code="0" invoiceId="2000000907465" shopId="100500"/>
 ```
-| Код ответа  | action=checkOrder                             | action=paymentAviso                           |
+##### Коды ответа
+| Код         | action=checkOrder                             | action=paymentAviso                           |
 | ----------- | --------------------------------------------- | --------------------------------------------- |
 | `code="0"`  | такой заказ есть в магазине, можно продолжать оплату |  магазин принимает оплаченный заказ    |
 | `code="1"`  | полученная MD5-сумма не совпадает с MD5-суммой на стороне магазина | тоже самое               |
