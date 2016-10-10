@@ -87,7 +87,7 @@
 > MD5(action;orderSumAmount;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
 
 Полученный результат переводится в верхний регистр (например, вы получите его от нас в таком виде md5=3F4C861280B12B74D6D6BD5CE3D14680).
-В этом подсчете важно значение `orderSumAmount`. Это сумма платежа, которое пришло к нам из вашей формы в параметре `sum`. Мы считаем, что сумма заказа именно такая.
+В этом подсчете важно значение `orderSumAmount`. Это сумма платежа, которая пришла к нам из вашей формы в параметре `sum`. Мы считаем, что сумма заказа именно такая.
 
 ##### Рекомендуемая формула рассчета MD5 на вашей стороне
 > MD5(action;суммазаказа;orderSumCurrencyPaycash;orderSumBankPaycash;shopId;invoiceId;customerNumber;shopPassword);
