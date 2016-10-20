@@ -124,4 +124,6 @@ curl -kvd 'action=checkOrder&shopId=100500&scid=555777&customerNumber=32&cdd_pan
 
 ### Шаг 3. Тестирование
 
-[Как выполнить тестирование оплаты](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/тестирование%20оплаты.md), [решение ошибок](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/решение%20ошибок%20при%20тестировании.md), [демонстрационный стенд](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/демонстрационный%20стенд.md)
+* [Как выполнить тестирование оплаты](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/тестирование%20оплаты.md)
+* [Решение ошибок](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/решение%20ошибок%20при%20тестировании.md)
+* [Демонстрационный стенд](https://github.com/yandex-money/yandex-money-joinup/blob/master/demo/демонстрационный%20стенд.md)
