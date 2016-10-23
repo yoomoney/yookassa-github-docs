@@ -37,7 +37,7 @@
 <!-- Эти поля обязательные, их нельзя удалять из платежной формы ========================= -->
     <form action="https://money.yandex.ru/eshop.xml" method="post">
     <input required name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden"/>
-    <input required name="scid" value="впишите-сюда-значение-своего-scid-для-демо-режима" type="hidden"/>
+    <input required name="scid" value="впишите-сюда-значение-своего-scid" type="hidden"/>
     <input required name="sum" value="1.00" type="hidden">
     <!-- сумма name="sum" указана для примера (1 руб.); напишите свое значение             -->
 
