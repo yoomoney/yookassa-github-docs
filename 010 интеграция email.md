@@ -42,7 +42,7 @@
     <form action="https://money.yandex.ru/eshop.xml" method="post">
     <input required name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden"/>
     <input required name="scid" value="впишите-сюда-значение-своего-scid" type="hidden"/>
-    <input required name="sum" value="1.00" type="hidden">
+    <input required name="sum" value="" type="number" min="1" placeholder="Укажите сумму платежа">
     <!-- сумма name="sum" указана для примера (1 руб.); напишите свое значение             -->
 
 <!-- Поле name="customerNumber" обязательное, его удалить нельзя =============================
