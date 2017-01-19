@@ -40,7 +40,7 @@
     <h4>Детали заказа</h4>
 
 <!-- Эти поля обязательные, их нельзя удалять из платежной формы ========================= -->
-<!-- Обязательно пропишите в полях value="" в строках shopid и scid требуемые значения     -->
+<!-- в полях value="" в строках shopid и scid пропишите требуемые значения                 -->
     <form action="https://money.yandex.ru/eshop.xml" method="post">
     <input required name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden"/>
     <input required name="scid" value="впишите-сюда-значение-своего-scid" type="hidden"/>
@@ -83,7 +83,7 @@
     <h4>Детали заказа</h4>
 
 <!-- Эти поля обязательные, их нельзя удалять из платежной формы ========================= -->
-<!-- Обязательно пропишите в полях value="" в строках shopid и scid требуемые значения     -->
+<!-- в полях value="" в строках shopid и scid пропишите требуемые значения                 -->
     <form action="https://money.yandex.ru/eshop.xml" method="post" target="_blank">
     <input required name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden"/>
     <input required name="scid" value="впишите-сюда-значение-своего-scid" type="hidden"/>
