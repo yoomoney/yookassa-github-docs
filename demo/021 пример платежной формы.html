@@ -1,9 +1,12 @@
 <!-- Здесь предоставлен минимальный код платежной формы, чтобы выполнить тестовый платеж в демо режиме. -->
-
-<form action="https://demomoney.yandex.ru/eshop.xml" method="POST">
-<input name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden">
-<input name="scid" value="впишите-сюда-значение-своего-scid-для-демо-режима" type="hidden">
-<input name="customerNumber" value="Покупатель N1"><!-- Идентификатор вашего покупателя -->
-<input name="sum" value="10.00"><!-- Сумма покупки (руб.) -->
-<input type="submit" value="Оплатить">
-</form>
+    <form action="https://demomoney.yandex.ru/eshop.xml" method="POST">
+      
+<!-- Эти поля обязательные, их нельзя удалять из платежной формы =============================
+     в полях value="" в строках shopid и scid пропишите требуемые значения                 -->  
+    <input name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden">
+    <input name="scid" value="впишите-сюда-значение-своего-scid-для-демо-режима" type="hidden">
+      
+    <input name="customerNumber" value="Покупатель N1"><!-- Идентификатор вашего покупателя -->
+    <input name="sum" value="10.00"><!-- Сумма покупки (руб.) -->
+    <input type="submit" value="Оплатить">
+    </form>
