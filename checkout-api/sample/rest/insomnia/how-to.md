@@ -20,3 +20,4 @@
 1. Установите Insomnia на свой компьютер. 
 2. Скачайте файл с коллекцией запросов API.Кассы
 3. Импортируйте файл с коллекцией в Insomnia
+![Insomnia export step1](/checkout-api/sample/rest/insomnia/insomnia-export-step1.png "Insomnia export step1")
