@@ -23,8 +23,8 @@
 #### Импорт коллекции
 3. Импортируйте файл с коллекцией в Insomnia  
 
-##### Шаг 1
-![Insomnia import step1](/checkout-api/sample/rest/insomnia/insomnia-import-step1.png "Insomnia import step1")
+> ##### Шаг 1
+> ![Insomnia import step1](/checkout-api/sample/rest/insomnia/insomnia-import-step1.png "Insomnia import step1")
 
-##### Шаг 2
-![Insomnia import step2](/checkout-api/sample/rest/insomnia/insomnia-import-step2.png "Insomnia import step2")
+> ##### Шаг 2
+> ![Insomnia import step2](/checkout-api/sample/rest/insomnia/insomnia-import-step2.png "Insomnia import step2")
