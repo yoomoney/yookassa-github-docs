@@ -19,14 +19,9 @@
 
 ---
 
-### Инструкция по установке
-
-1. Установите Insomnia на свой компьютер. 
-2. Скачайте файл с коллекцией запросов API.Кассы.
-
 #### Импорт коллекции
 
-3. Импортируйте файл с коллекцией запросов API.Кассы в Insomnia.
+Импортируйте файл с коллекцией запросов API.Кассы в Insomnia.
 
 > ##### Шаг 1
 > ![Insomnia import step1](/checkout-api/sample/rest/insomnia/insomnia-import-step1.png "Insomnia import step1")
