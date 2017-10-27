@@ -21,7 +21,7 @@
 
 ### Инструкция по установке
 - [ ] Скачайте дистрибутив программы [Insomnia](https://insomnia.rest/) (~65 Мб; популярный, бесплатный REST-клиент, работающий на ОС Windows, OSX и Ubuntu) и установите;
-- [ ] Скачайте [коллекцию запросов API.Яндекс.Кассы](/checkout-api/sample/rest/insomnia/API.Yandex.Kassa_test-env-for-insomnia.v1-001.ru.json.zip) (~10 Кб), разархивируйте и [импортируйте](#Импорт-коллекции) полученный JSON-файл в Insomnia;
+- [ ] Скачайте [коллекцию запросов API.Яндекс.Кассы](/checkout-api/sample/rest/insomnia/API.Yandex.Kassa_test-env-for-insomnia.v1-001.ru.json.zip) (~10 Кб), разархивируйте и [импортируйте](#Импорт-коллекции) в Insomnia;
 - [ ] Используйте настройки по-умолчанию или [пропишите](#Настройка) свой shopid и секретный ключ.
 
 #### Импорт коллекции
