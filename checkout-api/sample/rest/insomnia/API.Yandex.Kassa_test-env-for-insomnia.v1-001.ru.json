@@ -1,0 +1,1396 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2017-10-27T16:22:51.493Z",
+	"__export_source": "insomnia.desktop.app:v5.9.6",
+	"resources": [
+		{
+			"_id": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"parentId": null,
+			"modified": 1509020783286,
+			"created": 1508092617207,
+			"name": "API.Yandex.Kassa",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_55128b90730a490dbc566a0a83f0c464",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1508092617214,
+			"created": 1508092617214,
+			"name": "Base Environment",
+			"data": {},
+			"color": null,
+			"isPrivate": false,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_e0840f9afe09439886082fade7c693bb",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1508247839813,
+			"created": 1508092617210,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"creation": "2017-10-17T13:43:59.812Z",
+					"key": "yandexuid",
+					"value": "2243364201508247839",
+					"domain": "yandex.ru",
+					"path": "/",
+					"expires": "2027-10-17T13:43:59.000Z",
+					"hostOnly": false,
+					"lastAccessed": "2017-10-17T13:43:59.812Z",
+					"id": "18408021744544634"
+				},
+				{
+					"creation": "2017-10-17T13:43:59.813Z",
+					"key": "ys",
+					"value": "ymrefl.2C2A7DA2FC8ED481",
+					"path": "/",
+					"domain": "yandex.ru",
+					"hostOnly": false,
+					"lastAccessed": "2017-10-17T13:43:59.813Z",
+					"id": "4316348612994858"
+				},
+				{
+					"creation": "2017-10-17T13:43:59.813Z",
+					"key": "TS01db13ab",
+					"value": "01f3111baf8649debf153a5e0d599b3a7738c2e9a79075523de898267e1969862775fbe8e425f7cd0d9b82accb9ae75ce4a3a3bba854463cf98ff2135fa8b308c5a8661a758a8b58d90a5bf8e6ad87ab448aa7a79e",
+					"path": "/",
+					"domain": "money.yandex.ru",
+					"hostOnly": false,
+					"lastAccessed": "2017-10-17T13:43:59.813Z",
+					"id": "29780946356453275"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1509021069729,
+			"created": 1508092654750,
+			"name": "APIv3 card payment example",
+			"description": "",
+			"environment": {
+				"base_url": "https://payment.yandex.net/api/v3",
+				"shopid": "156833",
+				"api_key": "live_hQTNhpuhKpF4tiCa22xrYgaSkgQawhYRrGVYssE0yII",
+				"id": "{% response 'body', 'req_9846267e979249068564f3e64155ffc7', '$.id' %}",
+				"refund_id": "{% response 'body', 'req_67ae553c74bc492ca50a139affd0c700', '$.id' %}"
+			},
+			"metaSortKey": -1501763949381,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_05ed284570594fea8be300713c3cf034",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1508426681084,
+			"created": 1508333501564,
+			"name": "APIv3 card test payment example",
+			"description": "",
+			"environment": {
+				"base_url": "https://payment.yandex.net/api/v3",
+				"shopid": "54401",
+				"api_key": "test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg",
+				"id": "{% response 'body', 'req_941ca14f846f4b109099ec1f56cf06d9', '$.id' %}",
+				"refund_id": "{% response 'body', 'req_ecb6357b54a9428cafb433ad4bd51a1e', '$.id' %}"
+			},
+			"metaSortKey": -1501763949481,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_87a0269de037402ba0978f4c9ed37984",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1508946722088,
+			"created": 1508837968257,
+			"name": "Kibana",
+			"description": "",
+			"environment": {
+				"kibana_url": "https://kibana.yamoney.ru/app/kibana?#/discover?_g=",
+				"param1": "(%29&_a=(columns:!(_source%29,index:'payment-api-v3-logs-*',interval:auto,query:(query_string:(analyze_wildcard:!t,query:'message:%22",
+				"param2": "%22'%29%29,sort:!('@timestamp',asc%29%29",
+				"error_id": "{% response 'body', 'req_941ca14f846f4b109099ec1f56cf06d9', '$.id' %}",
+				"error_54fz_id": "{% response 'body', 'req_2b1f43cf83b645069f23a3c4083c304b', '$.id' %}"
+			},
+			"metaSortKey": -1501763949431,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1508849228361,
+			"created": 1508848358810,
+			"name": "APIv3 merchants test",
+			"description": "",
+			"environment": {
+				"base_url": "https://payment.yandex.net/api/v3",
+				"shopid": "500035",
+				"api_key": "test_0GM5L5NsaDfZF73SMkF__y7IWZi5-Y1iN6CCi7oPf6Y",
+				"id": "{% response 'body', 'req_941ca14f846f4b109099ec1f56cf06d9', '$.id' %}",
+				"refund_id": "{% response 'body', 'req_ecb6357b54a9428cafb433ad4bd51a1e', '$.id' %}"
+			},
+			"metaSortKey": -1501763949456,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1509021092487,
+			"created": 1509020721958,
+			"name": "APIv3 card test 54fz",
+			"description": "",
+			"environment": {
+				"base_url": "https://payment.yandex.net/api/v3",
+				"shopid": "54401",
+				"api_key": "test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg",
+				"id": "{% response 'body', 'req_941ca14f846f4b109099ec1f56cf06d9', '$.id' %}",
+				"refund_id": "{% response 'body', 'req_ecb6357b54a9428cafb433ad4bd51a1e', '$.id' %}"
+			},
+			"metaSortKey": -1501763949443.5,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"parentId": "wrk_7475e6de2d034f0fbc8b67803aa7eb76",
+			"modified": 1509091153245,
+			"created": 1509090239729,
+			"name": "bazzar40 test",
+			"description": "",
+			"environment": {
+				"base_url": "https://payment.yandex.net/api/v3",
+				"shopid": "500105",
+				"api_key": "test_JQ8OWRKthgRiJQBPPVW-N7OZevFYYvuCDtDFVEhtjww",
+				"id": "{% response 'body', 'req_941ca14f846f4b109099ec1f56cf06d9', '$.id' %}",
+				"refund_id": "{% response 'body', 'req_ecb6357b54a9428cafb433ad4bd51a1e', '$.id' %}"
+			},
+			"metaSortKey": -1501763949468.5,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_9846267e979249068564f3e64155ffc7",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508951809735,
+			"created": 1508092680948,
+			"url": "{{ base_url  }}/payments",
+			"name": "Step 1. Make payment",
+			"description": "##### Пошаговая схема платежа\n- **[Step 1. Make payment](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha)**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n    },\n    \"payment_method_data\": {\n        \"type\": \"bank_card\"\n    },\n    \"confirmation\": {\n        \"type\": \"redirect\",\n        \"return_url\": \"https://url.test\"\n    },\n\t\"capture\": \"false\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680948,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_cf43e6234c70420eb3b12500555e8dee",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508506095889,
+			"created": 1508093851405,
+			"url": "{{ base_url  }}/payments/{{ id  }}",
+			"name": "Step N. Status",
+			"description": "В любом момент времени статус заказа можно получить через метод **Status**.\n\n### Статусы и их значение, в зависимости от сценария оплаты\n\n#### Успешная оплата, контрагент отменил платеж\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `canceled` - оплата отменена контрагентом\n\n#### НЕ успешная оплата, платеж отменен автоматически\n1 `panding` - платеж сформирован, но не оплачен    \n2 `canceled` - в процессе оплаты плательщиком `что-то пошло не так` (любая внутренняя ошибка или ограничение Яндекс.Кассы) и платеж был автоматически отменен\n\n#### Успешная оплата, ошибок не было\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n\n#### Успешная оплата, ошибок не было, платеж возвращен методом Refund\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n(здесь надо будет четче расписать, как отличить `succeeded` успешно оплаченного и `succeeded` оплаченного, но возвращенного методом Refund)",
+			"method": "GET",
+			"body": {
+				"mimeType": "",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680873,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_32ce527e5c5e4d91bdbb389ba25ce8d3",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508505888674,
+			"created": 1508096160130,
+			"url": "{{ base_url  }}/payments/{{id}}/capture",
+			"name": "Step 2. Capture",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **[Step 2. Capture](https://kassa.yandex.ru/docs/checkout-api/#podtwerzhdenie-platezha)**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"8.00\",\n        \"currency\": \"RUB\"\n  }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680923,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_2173bc8375284a77bf5bd848dd51586e",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508506468474,
+			"created": 1508247981959,
+			"url": "{{ base_url  }}/payments/{{ id  }}/cancel",
+			"name": "Step 1.2 Cancel",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **[Step 1.2. Cancel](https://kassa.yandex.ru/docs/checkout-api/#otmena-platezha)**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "",
+				"text": "{}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2d1f0c8d4cb249978514dc193ab00452"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_0bb139daa5ec47298df69cd1d076610f"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680929.25,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_67ae553c74bc492ca50a139affd0c700",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508281406631,
+			"created": 1508271659642,
+			"url": "{{ base_url  }}/refunds",
+			"name": "Step 3. Refunds",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **[Step 3. Refunds](https://kassa.yandex.ru/docs/guides/#vozwraty)**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n  },\n    \"payment_id\": \"{{id}}\",\n    \"description\": \"test refund, idem-key {% uuid 'v4' %}\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680898,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_d32a842466e54b388e54d6f604856b9d",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508281042605,
+			"created": 1508280497097,
+			"url": "{{ base_url  }}/refunds/{{ refund_id  }}",
+			"name": "Step 3.1 Refunds status",
+			"description": "Просмотр данных по возврату, используя id-возврата платежа (он отличается от id-платежа) и данный идентификатор вы получаете в процессе выполнения метода refunds (возврата платежа или частичного возврата).",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680885.5,
+			"settingStoreCookies": false,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_4a8af36a55aa476c967cfb7353656f49",
+			"parentId": "fld_b4cfdcd5a8784389809f689b7893b2df",
+			"modified": 1508508421930,
+			"created": 1508508049707,
+			"url": "",
+			"name": "READ.ME",
+			"description": "в payment надо добавить `\"capture\": \"false\"` потому что пока баг\nhttps://jira.yamoney.ru/browse/API-1794",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508092680998,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_941ca14f846f4b109099ec1f56cf06d9",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1509021162853,
+			"created": 1508333501582,
+			"url": "{{ base_url  }}/payments",
+			"name": "Step 1. Make payment",
+			"description": "##### Пошаговая схема платежа\n- **[Step 1. Make payment](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha)**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n    },\n\t    \"payment_method_data\": {\n        \"type\": \"bank_card\"\n    },\n    \"confirmation\": {\n        \"type\": \"redirect\",\n        \"return_url\": \"https://url.test\"\n    }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680948,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ccde89d4802043beb520a69ff2ad702b",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1508419241370,
+			"created": 1508333501590,
+			"url": "{{ base_url  }}/payments/{{ id  }}",
+			"name": "Step N. Status",
+			"description": "В любом момент времени статус заказа можно получить через метод **Status**.\n\n### Статусы и их значение, в зависимости от сценария оплаты\n\n#### Успешная оплата, контрагент отменил платеж\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `canceled` - оплата отменена контрагентом\n\n#### НЕ успешная оплата, платеж отменен автоматически\n1 `panding` - платеж сформирован, но не оплачен    \n2 `canceled` - в процессе оплаты плательщиком `что-то пошло не так` (любая внутренняя ошибка или ограничение Яндекс.Кассы) и платеж был автоматически отменен\n\n#### Успешная оплата, ошибок не было\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n\n#### Успешная оплата, ошибок не было, платеж возвращен методом Refund\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n(здесь надо будет четче расписать, как отличить `succeeded` успешно оплаченного и `succeeded` оплаченного, но возвращенного методом Refund)",
+			"method": "GET",
+			"body": {
+				"mimeType": "",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680873,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_cb1e1f7117944fc9b35c0a912b3aff59",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1509093624460,
+			"created": 1508333501600,
+			"url": "{{ base_url  }}/payments/{{ id  }}/capture",
+			"name": "Step 2. Capture",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **[Step 2. Capture](https://kassa.yandex.ru/docs/checkout-api/#podtwerzhdenie-platezha)**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n  }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680923,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_c2b5f063428c46bfba3157c1090d486e",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1508333501606,
+			"created": 1508333501606,
+			"url": "{{ base_url  }}/payments/{{ id  }}/cancel",
+			"name": "Step 1.2 Cancel",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **[Step 1.2. Cancel](https://kassa.yandex.ru/docs/checkout-api/#otmena-platezha)**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "",
+				"text": "{}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2d1f0c8d4cb249978514dc193ab00452"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_0bb139daa5ec47298df69cd1d076610f"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680929.25,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ecb6357b54a9428cafb433ad4bd51a1e",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1508333501614,
+			"created": 1508333501614,
+			"url": "{{ base_url  }}/refunds",
+			"name": "Step 3. Refunds",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **[Step 3. Refunds](https://kassa.yandex.ru/docs/guides/#vozwraty)**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"8.00\",\n        \"currency\": \"RUB\"\n  },\n\t\"payment_id\": \"{{ id  }}\",\n    \"description\": \"test refund, idem-key {% uuid 'v4' %}\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680898,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_f4a7bc0d319546a68fcc5d1c657367e3",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1508333501619,
+			"created": 1508333501619,
+			"url": "{{ base_url  }}/refunds/{{ refund_id  }}",
+			"name": "Step 3.1 Refunds status",
+			"description": "Просмотр данных по возврату, используя id-возврата платежа (он отличается от id-платежа) и данный идентификатор вы получаете в процессе выполнения метода refunds (возврата платежа или частичного возврата).",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680885.5,
+			"settingStoreCookies": false,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_d7ac43716c9649dfbdbc94f911bdfe06",
+			"parentId": "fld_05ed284570594fea8be300713c3cf034",
+			"modified": 1509121309288,
+			"created": 1508417801551,
+			"url": "",
+			"name": "READ.ME",
+			"description": "### Overview\n\nЭто примеры для тестирования API.Кассы с помощью REST клиента Insomnia. На каждом шаге, на вкладке **Docs**, есть необходимая помощь и ссылка на документацию. \nПредставлены основные шаги сценария оплаты банковской картой (`\"type\": \"bank_card\"`).\n\nПо-умолчанию, используется *тестовый** магазин для публичного тестирования API.Кассы: shopid: `54401` (см. настройку [Envoriment](https://clck.ru/C4pY7); если необходимо, пропишите свой shopid и api_key). При оплате в тестовом магазине все проходит, как при настоящих платежах, но деньги никуда не переводятся.\n\n##### Тестовая карта\n\nПерейдите по ссылке `confirmation_url` из шага **Step 1**, вы попадете на платежную форму для оплаты тестовой банковской картой, используйте следующие данные:\n\n> номер карты: `1111111111111026`  \n> срок действия: `12 25`  | cvv: `000`\n\n---\n***** Обратите внимание, что shopid=`54401` может использоваться не только вами, а параллельно несколькими различными контрагентами. Магазин используется для ознакомления с возможностями API.Кассы, без регистрации в нашей системе и получения собственных идентификаторов.\n\n---\n*api-test-env.yandex.checkout.for.insomnia.v.1.0_24.10.2017*",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508417801551,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_4b96cbf9b93c41d398cba2be8a915988",
+			"parentId": "fld_87a0269de037402ba0978f4c9ed37984",
+			"modified": 1508946744114,
+			"created": 1508849087232,
+			"url": "",
+			"name": "Ищем в кибане",
+			"description": "### step1 {{ error_id  }}\n\n{{ kibana_url  }}{{ param1  }}{{ error_id  }}{{ param2  }}\n\n### step1 {{ error_54fz_id  }}\n{{ kibana_url  }}{{ param1  }}{{ error_54fz_id  }}{{ param2  }}\n",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"disabled": true,
+				"username": "",
+				"password": ""
+			},
+			"metaSortKey": -1508332818623.5,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": false,
+			"_type": "request"
+		},
+		{
+			"_id": "req_1c551113ccc14487b6e29173d27bdeec",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508848358822,
+			"created": 1508848358822,
+			"url": "{{ base_url  }}/payments",
+			"name": "Step 1. Make payment",
+			"description": "##### Пошаговая схема платежа\n- **[Step 1. Make payment](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha)**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n    },\n\t    \"payment_method_data\": {\n        \"type\": \"bank_card\"\n    },\n    \"confirmation\": {\n        \"type\": \"redirect\",\n        \"return_url\": \"https://url.test\"\n    }\t\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680948,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_8d4b8b17aa044c62aa34b03b43387652",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508853358133,
+			"created": 1508848358827,
+			"url": "{{ base_url  }}/payments/{{ id  }}",
+			"name": "Step N. Status",
+			"description": "В любом момент времени статус заказа можно получить через метод **Status**.\n\n### Статусы и их значение, в зависимости от сценария оплаты\n\nПример статуса: `\"status\": \"succeeded\"`\n\n#### Успешная оплата, контрагент отменил платеж\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `canceled` - оплата отменена контрагентом\n\n#### НЕ успешная оплата, платеж отменен автоматически\n1 `panding` - платеж сформирован, но не оплачен    \n2 `canceled` - в процессе оплаты плательщиком `что-то пошло не так` (любая внутренняя ошибка или ограничение Яндекс.Кассы) и платеж был автоматически отменен\n\n#### Успешная оплата, ошибок не было\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n\n#### Успешная оплата, ошибок не было, платеж возвращен методом Refund\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n(здесь надо будет четче расписать, как отличить `succeeded` успешно оплаченного и `succeeded` оплаченного, но возвращенного методом Refund)",
+			"method": "GET",
+			"body": {
+				"mimeType": "",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680873,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_231aac450f5a49729a0b56a643a2d7c9",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508848358842,
+			"created": 1508848358842,
+			"url": "{{ base_url  }}/payments/{{id}}/capture",
+			"name": "Step 2. Capture",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **[Step 2. Capture](https://kassa.yandex.ru/docs/checkout-api/#podtwerzhdenie-platezha)**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n  }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680923,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_354f34b7038649d5bd016aa9a12f0e03",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508848358847,
+			"created": 1508848358847,
+			"url": "{{ base_url  }}/payments/{{ id  }}/cancel",
+			"name": "Step 1.2 Cancel",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **[Step 1.2. Cancel](https://kassa.yandex.ru/docs/checkout-api/#otmena-platezha)**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "",
+				"text": "{}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2d1f0c8d4cb249978514dc193ab00452"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_0bb139daa5ec47298df69cd1d076610f"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680929.25,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_9269f96cdd1b412a854090dff315b3bd",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508848358850,
+			"created": 1508848358850,
+			"url": "{{ base_url  }}/refunds",
+			"name": "Step 3. Refunds",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **[Step 3. Refunds](https://kassa.yandex.ru/docs/guides/#vozwraty)**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"8.00\",\n        \"currency\": \"RUB\"\n  },\n\t\"payment_id\": \"{{ id  }}\",\n    \"description\": \"test refund, idem-key {% uuid 'v4' %}\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680898,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ef3173c464e44861a75b0bfa52bfd218",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508848358855,
+			"created": 1508848358855,
+			"url": "{{ base_url  }}/refunds/{{ refund_id  }}",
+			"name": "Step 3.1 Refunds status",
+			"description": "Просмотр данных по возврату, используя id-возврата платежа (он отличается от id-платежа) и данный идентификатор вы получаете в процессе выполнения метода refunds (возврата платежа или частичного возврата).",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680885.5,
+			"settingStoreCookies": false,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_64cdc1c5eff2443cb9e86733a694c5d0",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508848358859,
+			"created": 1508848358859,
+			"url": "",
+			"name": "READ.ME",
+			"description": "### Overview\n\nЭто примеры для тестирования API.Кассы с помощью REST клиента Insomnia. На каждом шаге, на вкладке DOCS, есть необходимая помощь и ссылка на документацию. \nПредставлены основные шаги сценария оплаты банковской картой (`\"type\": \"bank_card\"`).\n\nИспользуется *тестовый** магазин для публичного тестирования API.Кассы:\n* shopid:  `54401`\n* api_key: `{{ api_key  }}`\n\n##### Тестовая карта\n\nПерейдите по ссылке `confirmation_url` из шага **Step 1**, вы попадете на платежную форму для оплаты тестовой банковской картой, используйте следующие данные:\n\n> номер карты: `1111111111111026`  \n> срок действия: `12 25`  | cvv: `000`\n\n---\n***** Обратите внимание, что shopid=`54401` может использоваться не только вами, а параллельно несколькими различными контрагентами. Магазин используется для ознакомления с возможностями API.Кассы, без регистрации в нашей системе и получения собственных идентификаторов. При оплате в тестовом магазине все проходит, как при настоящих платежах: вам приходят все уведомления от Яндекс.Кассы, но деньги никуда не переводятся.\n\n---\n*api-test-env.yandex.checkout.for.insomnia.v.1.0_24.10.2017*",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508417801551,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_268193334b5a4843a1136334b382f558",
+			"parentId": "fld_d605b8e42ba34505af6386d77e018e9a",
+			"modified": 1508853760919,
+			"created": 1508853641515,
+			"url": "",
+			"name": "FAQ",
+			"description": "### В каких случаях можно ожидать колбек?\n\n1. Если `\"capture\": \"true\"`, то после оплаты, заказ сразу переходит в `\"status\": \"succeeded\"`. Мы никак не уведомляем об этом. Вы можете получить информацию только через метод получения текущего статуса `GET {{ base_url  }}/payments/{{ id }}`\n\n1. Если `\"capture\": \"true\"`, то после оплаты заказ переходит в `\"status\": \"waiting_for_capture\"` и мы сообщаем об этом на ваш колбек. Далее вы выполняете `POST {{base_url}}/payments/{{id}}/capture` и заказ перейдет в `\"status\": \"succeeded\"`.\n",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508375310087.25,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_9ec7065bf5e241de92c8ce0f506f35d5",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020721965,
+			"created": 1509020721965,
+			"url": "{{ base_url  }}/payments",
+			"name": "Step 1. Make payment",
+			"description": "##### Пошаговая схема платежа\n- **[Step 1. Make payment](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha)**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n    },\n\t    \"payment_method_data\": {\n        \"type\": \"bank_card\"\n    },\n    \"confirmation\": {\n        \"type\": \"redirect\",\n        \"return_url\": \"https://url.test\"\n    },\n\t\"save_payment_method\": \"true\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680948,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_666af402d06c49919ca22edc0be052bd",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722139,
+			"created": 1509020722139,
+			"url": "{{ base_url  }}/payments/{{ id  }}",
+			"name": "Step N. Status",
+			"description": "В любом момент времени статус заказа можно получить через метод **Status**.\n\n### Статусы и их значение, в зависимости от сценария оплаты\n\n#### Успешная оплата, контрагент отменил платеж\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `canceled` - оплата отменена контрагентом\n\n#### НЕ успешная оплата, платеж отменен автоматически\n1 `panding` - платеж сформирован, но не оплачен    \n2 `canceled` - в процессе оплаты плательщиком `что-то пошло не так` (любая внутренняя ошибка или ограничение Яндекс.Кассы) и платеж был автоматически отменен\n\n#### Успешная оплата, ошибок не было\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n\n#### Успешная оплата, ошибок не было, платеж возвращен методом Refund\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n(здесь надо будет четче расписать, как отличить `succeeded` успешно оплаченного и `succeeded` оплаченного, но возвращенного методом Refund)",
+			"method": "GET",
+			"body": {
+				"mimeType": "",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680873,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_3795334d90554bf99c56dac5a066b13f",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722141,
+			"created": 1509020722141,
+			"url": "{{ base_url  }}/payments/2182d878-000f-50a1-9000-0a4e59549e2c/capture",
+			"name": "Step 2. Capture",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **[Step 2. Capture](https://kassa.yandex.ru/docs/checkout-api/#podtwerzhdenie-platezha)**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n  }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680923,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_e292adea013d434992360b4b6d513ea6",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722145,
+			"created": 1509020722145,
+			"url": "{{ base_url  }}/payments/{{ id  }}/cancel",
+			"name": "Step 1.2 Cancel",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **[Step 1.2. Cancel](https://kassa.yandex.ru/docs/checkout-api/#otmena-platezha)**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "",
+				"text": "{}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2d1f0c8d4cb249978514dc193ab00452"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_0bb139daa5ec47298df69cd1d076610f"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680929.25,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_9fcb5eb385d948b083d8cf77e740869f",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722150,
+			"created": 1509020722150,
+			"url": "{{ base_url  }}/refunds",
+			"name": "Step 3. Refunds",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **[Step 3. Refunds](https://kassa.yandex.ru/docs/guides/#vozwraty)**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"8.00\",\n        \"currency\": \"RUB\"\n  },\n\t\"payment_id\": \"{{ id  }}\",\n    \"description\": \"test refund, idem-key {% uuid 'v4' %}\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680898,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_54c8b153442e4eb7af9da47c4b351e30",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722153,
+			"created": 1509020722153,
+			"url": "{{ base_url  }}/refunds/{{ refund_id  }}",
+			"name": "Step 3.1 Refunds status",
+			"description": "Просмотр данных по возврату, используя id-возврата платежа (он отличается от id-платежа) и данный идентификатор вы получаете в процессе выполнения метода refunds (возврата платежа или частичного возврата).",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680885.5,
+			"settingStoreCookies": false,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_9ce67f8c148d4945b5e9429412d20e81",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722156,
+			"created": 1509020722156,
+			"url": "",
+			"name": "READ.ME",
+			"description": "### Overview\n\nЭто примеры для тестирования API.Кассы с помощью REST клиента Insomnia. На каждом шаге, на вкладке DOCS, есть необходимая помощь и ссылка на документацию. \nПредставлены основные шаги сценария оплаты банковской картой (`\"type\": \"bank_card\"`).\n\nИспользуется *тестовый** магазин для публичного тестирования API.Кассы:\n* shopid:  `54401`\n* api_key: `{{ api_key  }}`\n\n##### Тестовая карта\n\nПерейдите по ссылке `confirmation_url` из шага **Step 1**, вы попадете на платежную форму для оплаты тестовой банковской картой, используйте следующие данные:\n\n> номер карты: `1111111111111026`  \n> срок действия: `12 25`  | cvv: `000`\n\n---\n***** Обратите внимание, что shopid=`54401` может использоваться не только вами, а параллельно несколькими различными контрагентами. Магазин используется для ознакомления с возможностями API.Кассы, без регистрации в нашей системе и получения собственных идентификаторов. При оплате в тестовом магазине все проходит, как при настоящих платежах: вам приходят все уведомления от Яндекс.Кассы, но деньги никуда не переводятся.\n\n---\n*api-test-env.yandex.checkout.for.insomnia.v.1.0_24.10.2017*",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1508417801551,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_dba4482b907542e09f78c6e436483a5f",
+			"parentId": "fld_9ec17f5e95cc443897ed16a49b9d5e4c",
+			"modified": 1509020722159,
+			"created": 1509020722159,
+			"url": "{{ base_url  }}/payments",
+			"name": "Step 1. Make payment 54fz",
+			"description": "##### Пошаговая схема платежа\n- **[Step 1. Make payment](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha)**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n    },\n\t    \"payment_method_data\": {\n        \"type\": \"bank_card\"\n    },\n    \"confirmation\": {\n        \"type\": \"redirect\",\n        \"return_url\": \"https://url.test\"\n    },\n\t\"receipt\": {\n\t\t\"items\": [{\n\t\t\t\"description\": \"tovar 1\",\n\t\t\t\"quantity\": \"1\",\n\t\t\t\"amount\": {\n\t\t\t\t\"value\": \"10.00\",\n\t\t\t\t\"currency\": \"RUB\"\n\t\t\t\t},\n\t\t\t\"vat_code\": \"1\"\n\t\t}],\n\t\t\"tax_system_code\": \"1\",\n\t\t\"email\": \"dpascal@gmail.com\"\n\t},\n\t\"save_payment_method\": \"true\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680938.625,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_8875a3c4cccf4141827493d0c4869c6c",
+			"parentId": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"modified": 1509093538094,
+			"created": 1509090239744,
+			"url": "{{ base_url  }}/payments",
+			"name": "Step 1. Make payment",
+			"description": "##### Пошаговая схема платежа\n- **[Step 1. Make payment](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha)**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": " {\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n    },\n\t    \"payment_method_data\": {\n        \"type\": \"bank_card\"\n    },\n    \"confirmation\": {\n        \"type\": \"redirect\",\n        \"return_url\": \"https://url.test\"\n    }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680948,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_0304e2c327dd40e49017f5729c7bd4df",
+			"parentId": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"modified": 1509090239749,
+			"created": 1509090239749,
+			"url": "{{ base_url  }}/payments/{{ id  }}",
+			"name": "Step N. Status",
+			"description": "В любом момент времени статус заказа можно получить через метод **Status**.\n\n### Статусы и их значение, в зависимости от сценария оплаты\n\n#### Успешная оплата, контрагент отменил платеж\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `canceled` - оплата отменена контрагентом\n\n#### НЕ успешная оплата, платеж отменен автоматически\n1 `panding` - платеж сформирован, но не оплачен    \n2 `canceled` - в процессе оплаты плательщиком `что-то пошло не так` (любая внутренняя ошибка или ограничение Яндекс.Кассы) и платеж был автоматически отменен\n\n#### Успешная оплата, ошибок не было\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n\n#### Успешная оплата, ошибок не было, платеж возвращен методом Refund\n1 `panding` - платеж сформирован, но не оплачен  \n2 `waiting_for_capture` - плательщик выполнил платеж успешно  \n3 `succeeded` - платеж успешно подтвержден методом Capture\n(здесь надо будет четче расписать, как отличить `succeeded` успешно оплаченного и `succeeded` оплаченного, но возвращенного методом Refund)",
+			"method": "GET",
+			"body": {
+				"mimeType": "",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680873,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_5b3d8f9b07aa47ce828e1c2f2b5c16f9",
+			"parentId": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"modified": 1509093602861,
+			"created": 1509090239752,
+			"url": "{{ base_url  }}/payments/2185046a-000f-5081-a000-0f4819e61f05/capture",
+			"name": "Step 2. Capture",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **[Step 2. Capture](https://kassa.yandex.ru/docs/checkout-api/#podtwerzhdenie-platezha)**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"10.00\",\n        \"currency\": \"RUB\"\n  }\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680923,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_d0f6335013ca4bb9b32b94d2e35d8c8c",
+			"parentId": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"modified": 1509106670547,
+			"created": 1509090239756,
+			"url": "{{ base_url  }}/payments/2185355e-000f-5081-a000-08cca3322955/cancel",
+			"name": "Step 1.2 Cancel",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **[Step 1.2. Cancel](https://kassa.yandex.ru/docs/checkout-api/#otmena-platezha)**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить **Cancel**, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить Capture, то по истечении этого срока сработает автоматический **Cancel**.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **Step 3. Refunds**  \nОтмена платежа (платежа, который был подтвержен методом capture).\n",
+			"method": "POST",
+			"body": {
+				"mimeType": "",
+				"text": "{}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2d1f0c8d4cb249978514dc193ab00452"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_0bb139daa5ec47298df69cd1d076610f"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680929.25,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_a2b2f5c2c7a94c5fb4560aee637bf05b",
+			"parentId": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"modified": 1509090239759,
+			"created": 1509090239759,
+			"url": "{{ base_url  }}/refunds",
+			"name": "Step 3. Refunds",
+			"description": "##### Пошаговая схема платежа\n- **Step 1. Make payment**  \nПередаем платежные данные. Получаем ссылку для оплаты `confirmation_url`.\n  - Плательщик переходит на `confirmation_url` и выполняет оплату.\n  - Заказ переходит из `\"status\": \"pending\"` в `waiting_for_capture`.\n  - Яндекс.Касса передает на колбек магазина информацию о том, что заказ перешел в состояние `waiting_for_capture`.\n- **Step 1.2. Cancel**  \nЗаказ в статусе `waiting_for_capture` можно отменить. Деньги вернутся плательщику.   \nЕсли не выполнить Cancel, то в этом статусе платеж держится: карты 7 дней, остальные методы 2 часа. И если в этом интервале не выполнить **Capture**, то по истечении этого срока сработает автоматический Cancel.\n---\n- **Step 2. Capture**  \nЗаказ в статусте `waiting_for_capture` можно подтвердить.  \nВремя, в течение которого нужно подтвердить платеж, передается в поле `expires_at`. Если вы не подтвердите платеж в отведенное время, он автоматически перейдет в статус canceled и деньги вернутся пользователю.\n---\n- **[Step 3. Refunds](https://kassa.yandex.ru/docs/guides/#vozwraty)**  \nОтмена платежа (платежа, который был подтвержен методом capture).",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"amount\": {\n        \"value\": \"8.00\",\n        \"currency\": \"RUB\"\n  },\n\t\"payment_id\": \"{{ id  }}\",\n    \"description\": \"test refund, idem-key {% uuid 'v4' %}\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_9df4957f8d6d4479b8e21b80c03cfa2c"
+				},
+				{
+					"name": "Idempotence-Key",
+					"value": "{% uuid 'v4' %}",
+					"id": "pair_08a0cb5d93af43fc9ec889201080b690"
+				}
+			],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680898,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_23e2d921198f4a2eacd8eb281b47fdf8",
+			"parentId": "fld_befe9bcc1a8a4104bc060e2362352ec8",
+			"modified": 1509090239762,
+			"created": 1509090239762,
+			"url": "{{ base_url  }}/refunds/{{ refund_id  }}",
+			"name": "Step 3.1 Refunds status",
+			"description": "Просмотр данных по возврату, используя id-возврата платежа (он отличается от id-платежа) и данный идентификатор вы получаете в процессе выполнения метода refunds (возврата платежа или частичного возврата).",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {
+				"type": "basic",
+				"username": "{{ shopid  }}",
+				"password": "{{ api_key }}",
+				"disabled": false
+			},
+			"metaSortKey": -1508092680885.5,
+			"settingStoreCookies": false,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		}
+	]
+}
