@@ -36,8 +36,13 @@
 
 В настройках пропишите ваши тестовые shopid и секретный ключ (если их нет, оставьте те, что прописаны по-умолчанию). Тестовое окружение готово.
 
+> ![Insomnia settings step1](/checkout-api/sample/rest/insomnia/settings-step1.png "Insomnia settings step1")
+> ![Insomnia settings step2](/checkout-api/sample/rest/insomnia/settings-import-step2.png "Insomnia settings step2")
+
+<!--
 #### Ссылки
 * [Insomnia](https://insomnia.rest/) - удобный, бесплатный REST-клиент под все операционные системы.
 * Файл с коллекцией запросов API.Кассы
 * Документация API.Кассы
 * Гайды API.Кассы
+-->
