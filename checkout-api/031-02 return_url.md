@@ -7,7 +7,7 @@ Return_url. Рекомендации по реализации
 
 ### Один платеж, один `return_url`
 
-> При [создании платежа](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha) в параметре `return_url` вы передаете ссылку, которая будет работать на любом этапе платежа как ссылка кнопки "вернуться в магазин". Определение статуса платежа в момент перехода на вашу страницу `return_url` должно выполняться через [запрос о статусе платежа](https://kassa.yandex.ru/docs/checkout-api/#informaciq-o-platezhe).
+> При [создании платежа](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha) в параметре `return_url` вы передаете ссылку, которая будет работать на любом этапе платежа как ссылка кнопки "вернуться в магазин". Определение статуса платежа в момент перехода на вашу страницу `return_url` необходимо выполнить через [запрос о статусе платежа](https://kassa.yandex.ru/docs/checkout-api/#informaciq-o-platezhe).
 
 ### Чего не будет
 
