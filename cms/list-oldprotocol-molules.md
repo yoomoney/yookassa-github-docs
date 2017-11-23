@@ -1,7 +1,7 @@
 Инструкции по платежным модулям и ссылки на модули [старого](https://tech.yandex.ru/money/doc/payment-solution/About-docpage/) платежного протокола Яндекс.Кассы
 ====================
 
-Модуль | Инструкция | Загрузка |
+Модуль | Инструкция | Загрузка
 ------------ | ------------- | -------------
 Drupal 7.x (Commerce) | [Инструкция](https://kassa.yandex.ru/files/drupal.pdf) | [Модуль](https://github.com/yandex-money/yandex-money-cms-drupal)
 Drupal 7.x (Ubercart) | [Инструкция](https://kassa.yandex.ru/files/drupal.pdf) | [Модуль](https://github.com/yandex-money/yandex-money-cms-drupal)
