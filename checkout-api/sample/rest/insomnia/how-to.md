@@ -11,6 +11,27 @@
 	"api_key": "test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg"
 ```
 
+### BUG FIX
+
+К сожалению, в процессе эксплуатации тестового магазина возникла одна техническая нагладка 22.02.2018. Раньше в запросах не требовалось передавать номер товара (и так оно и должно быть в обычном shopid), но мы тестировали многотоварный режим и теперь в запросе payments передавайте:
+
+```"recipient": {
+    "gateway_id": "289250"
+  }
+ ```
+  
+Иначе вы будете получать ошибку вида:
+```
+{
+	"type": "error",
+	"id": "fb202ed8-e975-46b1-991f-b5ec948d1fee",
+	"code": "invalid_request",
+	"description": "Failed to resolve gateway id, please provide recipient field in request",
+	"parameter": "recipient"
+}
+```
+  
+
 ### Overview
 
 ![пример тестового окружения для тестирования API.Яндекс.Кассы в REST клиенте Insomnia](/checkout-api/sample/rest/insomnia/api.yandex.checkout.insomnia-sample.png "пример тестового окружения для тестирования API.Яндекс.Кассы в REST клиенте Insomnia")
