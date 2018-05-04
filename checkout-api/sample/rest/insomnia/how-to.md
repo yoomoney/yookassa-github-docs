@@ -6,11 +6,12 @@
 
 ### N.B.
 
-** Внимание! ** `"shopid": "54401"` времено не работает. Мы починим это 04.05.2018.
+** Внимание! ** Начиная с 04.05.2018 изменился пароль (`api_key`). Если вы использовали старый пароль, обновите его. Старый пароль ~test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg~.
+
 ```
 ### Для самостоятельных тестов без Insomnia
 	"shopid": "54401",
-	"api_key": "test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg"
+	"api_key": "test_Fh8hUAVVBGUGbjmlzba6TB0iyUbos_lueTHE-axOwM0"
 ```
 <!--
 ### BUG FIX 21.02.2018
