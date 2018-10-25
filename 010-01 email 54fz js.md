@@ -17,14 +17,12 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
 
 ```html
 <form action="https://demomoney.yandex.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
-
-	        <input required name="shopId" value="72491" type="hidden"/>
-            <input required name="scid" value="541855" type="hidden"/>
-            <input required name="sum" value="1246.47" type="hidden">
-            <input required name="customerNumber" value="test-fz-54-with-dynamic-customerContact" type="hidden"/>
-            <input required name="paymentType" value="AC" type="hidden"/>
-			
-    <input required name="customerContact" value="" placeholder="Укажите телефон +7NNNxxxXXxx или электронный адрес для получения чека" size="72"/><br>
+	<input required name="shopId" value="72491" type="hidden"/>
+	<input required name="scid" value="541855" type="hidden"/>
+	<input required name="sum" value="1246.47" type="hidden">
+	<input required name="customerNumber" value="test-fz-54-with-dynamic-customerContact" type="hidden"/>
+	<input required name="paymentType" value="AC" type="hidden"/>		
+	<input required name="customerContact" value="" placeholder="Укажите телефон +7NNNxxxXXxx или электронный адрес для получения чека" size="72"/><br>
 
     <!-- пропишите здесь свои товары, их количество и стоимость 
     помните, что сумма товаров в ym_merchant_receipt должна быть равна сумме в sum выше в коде -->
@@ -38,8 +36,8 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
 			{"quantity": 1,"price": {"amount": 0.00},"tax": 1,"text": "Бесплатная доставка"}
                   ]}'
 	type="hidden"/>
-    <input type="submit" value="test-fz-54-with-dynamic-customerContact">	
-    </form>
+	<input type="submit" value="test-fz-54-with-dynamic-customerContact">	
+</form>
 
 <script>
     var  validateContact = function(value) {
