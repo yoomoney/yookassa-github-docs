@@ -1,12 +1,14 @@
+<!--
+### N.B.
+
+** Внимание! ** Начиная с 04.05.2018 изменился пароль (`api_key`). Если вы использовали старый пароль, обновите его. Старый пароль ~test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg~.
+-->
+
 [![яндекс касса](/i/yakassalogo.png "Яндекс Касса")](https://kassa.yandex.ru) / [помощь](https://yandex.ru/support/checkout/) / [api-докуметация](https://kassa.yandex.ru/docs/checkout-api/#api-yandex-kassy), [api-гайды](https://kassa.yandex.ru/docs/guides/#bystryj-start), [YandexCheckout.js](https://kassa.yandex.ru/docs/checkout-js/#yandexcheckout-js), [en](https://checkout.yandex.com/docs/checkout-api/#using-the-api)
 
 Тестовое окружение API.Яндекс.Кассы
 ===================================
-> Простое в установке и удобное в использовании окружение для того, чтобы освоить наше API разработчикам, выполняющим интеграцию или интересующимся.
-
-### N.B.
-
-** Внимание! ** Начиная с 04.05.2018 изменился пароль (`api_key`). Если вы использовали старый пароль, обновите его. Старый пароль ~test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg~.
+> Простое в установке и удобное в использовании окружение для того, чтобы освоить наше API разработчикам, выполняющим интеграцию или интересующимся. Внимание! Это статья только для программистов.
 
 ```
 ### Для самостоятельных тестов без Insomnia
