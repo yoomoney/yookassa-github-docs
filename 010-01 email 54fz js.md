@@ -19,23 +19,34 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
 <form action="https://demomoney.yandex.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
 	<input required name="shopId" value="72491" type="hidden"/>
 	<input required name="scid" value="541855" type="hidden"/>
-	<input required name="sum" value="1246.47" type="hidden">
+	<input required name="sum" value="1046.47" type="hidden">
 	<input required name="customerNumber" value="test-fz-54-with-dynamic-customerContact" type="hidden"/>
 	<input required name="paymentType" value="AC" type="hidden"/>		
 	<input required name="customerContact" value="" placeholder="Укажите телефон +7NNNxxxXXxx или электронный адрес для получения чека" size="72"/><br>
 
     <!-- пропишите здесь свои товары, их количество и стоимость 
     помните, что сумма товаров в ym_merchant_receipt должна быть равна сумме в sum выше в коде -->
-	<input name="ym_merchant_receipt"
-		value='{"customerContact": "",
+<input name="ym_merchant_receipt"
+  value='{"customerContact": "",
         "taxSystem": 1,
           "items":[
-            {"quantity": 1.154,"price": {"amount": 300.23},"tax": 1,"text": "Зеленый чай \"Юн Ву\", кг."}, 
-            {"quantity": 3,"price": {"amount": 200.00},"tax": 3,"text": "Кружка для чая, шт., скидка 10%"},
-			{"quantity": 0.3,"price": {"amount": 1000.00},"tax": 3,"text": "Предоплата 30%, настольная игра \"Tea Time\""},
-			{"quantity": 1,"price": {"amount": 0.00},"tax": 1,"text": "Бесплатная доставка"}
+            {"quantity": 1.154, "price": {"amount": 300.23},  "tax": 3,"text": "Зеленый чай \"Юн Ву\", кг",
+                        "paymentMethodType": "full_prepayment",
+                        "paymentSubjectType": "commodity"},
+            {"quantity": 2,     "price": {"amount": 200.00},  "tax": 3,"text": "Кружка для чая, шт., скидка 10%",
+                        "paymentMethodType": "full_prepayment",
+                        "paymentSubjectType": "commodity"},
+            {"quantity": 0.3,   "price": {"amount": 1000.00}, "tax": 3,"text": "Предоплата 30%, настольная игра \"Tea Time\""
+                        "paymentMethodType": "partial_prepayment",
+                        "paymentSubjectType": "commodity"},
+            {"quantity": 1,     "price": {"amount": 0.00},    "tax": 1,"text": "Бесплатная доставка"
+                        "paymentMethodType": "full_prepayment",
+                        "paymentSubjectType": "service"},
+            {"quantity": 1,     "price": {"amount": 0.00},    "tax": 1,"text": "Пример одинарной кавычки can\u0027t"
+                        "paymentMethodType": "full_prepayment",
+                        "paymentSubjectType": "commodity"}
                   ]}'
-	type="hidden"/>
+type="hidden"/>
 	<input type="submit" value="test-fz-54-with-dynamic-customerContact">	
 </form>
 
