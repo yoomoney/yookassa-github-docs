@@ -54,6 +54,7 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
     <form action="https://money.yandex.ru/eshop.xml" method="post">
     <input required name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden"/>
     <input required name="scid" value="впишите-сюда-значение-своего-scid" type="hidden"/>
+    <input required name="paymentType" value="" type="hidden"/>
     <input required name="sum" value="" type="number" min="1" placeholder="Укажите сумму платежа"><br>
     <!-- сумма name="sum" указана для примера (1 руб.); напишите свое значение             -->
 
@@ -103,6 +104,7 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
     <form action="https://money.yandex.ru/eshop.xml" method="post" target="_blank">
     <input required name="shopId" value="впишите-сюда-значение-своего-shopId" type="hidden"/>
     <input required name="scid" value="впишите-сюда-значение-своего-scid" type="hidden"/>
+    <input required name="paymentType" value="" type="hidden"/>
     <input required name="sum" value="" type="number" min="1" placeholder="Укажите сумму платежа"><br>
     <!-- сумма name="sum" указана для примера (1 руб.); напишите свое значение             -->
     <br>
