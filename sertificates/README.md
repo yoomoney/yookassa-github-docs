@@ -5,7 +5,7 @@
 * [Yandex_Money_Chain.p7b][] - ключница ЦС, которым подписывались сертификаты, выданные ранее 2016 года  
 * [payouts_responsverify_demo.cer][] - сертификат, которым подписываются ответы на запросы контрагента в рамках протокола выплат в демо [среде][], действует до 17.12.2020   
 * [payouts_responsverify_production.cer][] - сертификат, которым подписываются ответы на запросы контрагента в рамках протокола выплат в боевой [среде][], действует до 12.02.2021  
-* [pkcs7_verification.cer][] - сертификат для проверки подписи уведомлений о платежей при подключении по протоколу уведомлений с исользованием формата [PKCS#7][], действует до 27 декабря 2020 17:12:15
+* [pkcs7_verification.cer][] - сертификат для проверки подписи уведомлений о платежей при подключении по протоколу уведомлений с использованием формата [PKCS#7][], действует до 27 декабря 2020 17:12:15
 
 [NBCO_YM_Chain.p7b]: https://github.com/yandex-money/yandex-money-joinup/blob/master/sertificates/NBCO_YM_Chain.p7b  
 [Yandex_Money_Chain.p7b]: https://github.com/yandex-money/yandex-money-joinup/blob/master/sertificates/Yandex_Money_Chain.p7b  
