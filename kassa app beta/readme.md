@@ -10,3 +10,7 @@
 7. Нажмите "Открыть".
 
 Все! Установка beta-версии приложения из TestFlight завершена. Можно приступать к тестированию приложения.
+
+<!-- source
+https://wiki.yamoney.ru/pages/viewpage.action?pageId=222274375
+-->
