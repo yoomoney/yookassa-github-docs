@@ -16,9 +16,9 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
 ### Рабочий пример кода
 
 ```html
-<form action="https://demomoney.yandex.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
-	<input required name="shopId" value="72491" type="hidden"/>
-	<input required name="scid" value="541855" type="hidden"/>
+<form action="https://money.yandex.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
+	<input required name="shopId" value="123456" type="hidden"/>
+	<input required name="scid" value="123456" type="hidden"/>
 	<input required name="sum" value="1046.47" type="hidden">
 	<input required name="customerNumber" value="test-fz-54-with-dynamic-customerContact" type="hidden"/>
 	<input required name="paymentType" value="AC" type="hidden"/>		
