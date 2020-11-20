@@ -167,7 +167,7 @@ Editing HTML To Your Wix
 ```txt
 От: ЮKassa Demo Payment Center <paymentcenter@yoomoney.ru>
 Кому: email адрес, который вы указали в своей технической анкете
-Тема: Ю.Money payment for название-вашей-организации #56
+Тема: ЮMoney payment for название-вашей-организации #56
 
 --------------------------------- Тело письма: ---------------------------------
 Извещение № 56
