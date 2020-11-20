@@ -1,12 +1,4 @@
-
-<!--
-> [начало](#Начало-интеграции), [платежная форма](#Шаг-1-Платежная-форма), [письмо](#Шаг-2-Письмо-об-оплате), [тестирование](#Шаг-3-Тестирование), [faq](#faq)
-<sub><sup>**#инструкция для сайтов, использующих простую схему интеграции и уведомления по email**</sup></sub>
-Рекомендуем начать с создания [платежной формы](#Шаг-1-Платежная-форма).
-https://jira.yamoney.ru/browse/NEWTASK-4499
--->
-
-[![яндекс касса](/i/yakassalogo.png "Яндекс Касса")](https://kassa.yandex.ru) / документация / [http](/demo/010%20интеграция%20для%20самописных%20сайтов.md), [cms](/demo/011%20интеграция%20для%20CMS%20и%20SaaS.md), [email](/010%20интеграция%20email.md):arrow_left:, [тестирование](/demo/030%20тестирование.md), [решение ошибок](/demo/031%20решение%20ошибок.md), [демо](/demo/032%20демо%20стенд.md),  [54-ФЗ](/demo/54-fz.md)
+[![юkassa](/i/yookassalogo.png "юkassa")](https://yookassa.ru) / документация / [http](/demo/010%20интеграция%20для%20самописных%20сайтов.md), [cms](/demo/011%20интеграция%20для%20CMS%20и%20SaaS.md), [email](/010%20интеграция%20email.md):arrow_left:, [тестирование](/demo/030%20тестирование.md), [решение ошибок](/demo/031%20решение%20ошибок.md), [демо](/demo/032%20демо%20стенд.md),  [54-ФЗ](/demo/54-fz.md)
 
 :mortar_board: Пример JS-скрипта для схемы E-mail + 54ФЗ
 ========================================================
@@ -16,7 +8,7 @@ https://jira.yamoney.ru/browse/NEWTASK-4499
 ### Рабочий пример кода
 
 ```html
-<form action="https://money.yandex.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
+<form action="https://yoomoney.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
 	<input required name="shopId" value="123456" type="hidden"/>
 	<input required name="scid" value="123456" type="hidden"/>
 	<input required name="sum" value="1046.47" type="hidden">
