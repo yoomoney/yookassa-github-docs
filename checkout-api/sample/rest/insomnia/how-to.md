@@ -4,9 +4,9 @@
 ** Внимание! ** Начиная с 04.05.2018 изменился пароль (`api_key`). Если вы использовали старый пароль, обновите его. Старый пароль ~test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg~.
 -->
 
-[![яндекс касса](/i/yakassalogo.png "Яндекс Касса")](https://kassa.yandex.ru) / [помощь](https://yandex.ru/support/checkout/) / [api-докуметация](https://kassa.yandex.ru/docs/checkout-api/#api-yandex-kassy), [api-гайды](https://kassa.yandex.ru/docs/guides/#bystryj-start), [YandexCheckout.js](https://kassa.yandex.ru/docs/checkout-js/#yandexcheckout-js), [en](https://checkout.yandex.com/docs/checkout-api/#using-the-api)
+[![ЮKassa](/i/yookassalogo.png "ЮKassa")](https://yookassa.ru) / [помощь](https://yookassa.ru/docs/support) / [api-докуметация](https://yookassa.ru/developers), [Checkout.js](https://yookassa.ru/developers/payment-forms/other/yc-js), [SDK](https://yookassa.ru/developers#s
 
-Тестовое окружение API.Яндекс.Кассы
+Тестовое окружение API.ЮKassa
 ===================================
 > Простое в установке и удобное в использовании окружение для того, чтобы освоить наше API разработчикам, выполняющим интеграцию или интересующимся. Внимание! Это статья только для программистов.
 
@@ -40,28 +40,28 @@
 
 ### Overview
 
-![пример тестового окружения для тестирования API.Яндекс.Кассы в REST клиенте Insomnia](/checkout-api/sample/rest/insomnia/api.yandex.checkout.insomnia-sample.png "пример тестового окружения для тестирования API.Яндекс.Кассы в REST клиенте Insomnia")
+![пример тестового окружения для тестирования API.ЮKassa в REST клиенте Insomnia](/checkout-api/sample/rest/insomnia/api.yookassa.insomnia-sample.png "пример тестового окружения для тестирования API.ЮKassa в REST клиенте Insomnia")
 
  * В тестовом окружении представлены примеры для оплаты банковской картой  
  (реальных средств здесь нет, только тестовые).
- * Используйте *тестовую карту*: `5555555555554444`, срок действия: `12 20`, cvv: `000`. Или [другие тестовые карты](https://kassa.yandex.ru/docs/guides/#oplata-bankowskoj-kartoj).
+ * Используйте *тестовую карту*: `5555555555554444`, срок действия: `12 20`, cvv: `000`. Или [другие тестовые карты](https://yookassa.ru/developers/using-api/testing#test-bank-card).
  * Вы будете взаимодействовать с нашей боевой системой в режиме real-time:
    * выполняя запрос, вы получите наглядное представление о том, какой запрос отправляется, какой ответ возвращается и т.д.;
    * cможете при необходимости изменить запрос.
  * На каждом шаге есть помощь на вкладке "Docs" и необходимые ссылки.
- * Уведомления о смене статуса заказа поступают на [URL для уведомлений](/checkout-api/031-01%20url%20для%20уведомлений.md), но вы их не увидите, т.к. он общий, закрытый, поэтому статус заказа в данном публичном магазине надо запрашивать через [запрос статуса](https://kassa.yandex.ru/docs/checkout-api/#informaciq-o-platezhe).
+ * Уведомления о смене статуса заказа поступают на [URL для уведомлений](/checkout-api/031-01%20url%20для%20уведомлений.md), но вы их не увидите, т.к. он общий, закрытый, поэтому статус заказа в данном публичном магазине надо запрашивать через [запрос статуса](https://yookassa.ru/developers/api#информация_о_платеже).
  * **Регистрации не требуется**, всё работает из коробки.
 
 ---
 
 ## Инструкция по установке
 - [ ] Скачайте дистрибутив программы [Insomnia](https://insomnia.rest/) и установите (~65 Мб; популярный, бесплатный REST-клиент, работающий на ОС Windows, OSX и Ubuntu);
-- [ ] **[Скачайте коллекцию запросов API.Яндекс.Кассы](/checkout-api/sample/rest/insomnia/API.Yandex.Kassa_test-env-for-insomnia.v1-002.ru.json.zip)** (~10 Кб), разархивируйте и [импортируйте](#Импорт-коллекции) в Insomnia;
+- [ ] **[Скачайте коллекцию запросов API.ЮKassa](/checkout-api/sample/rest/insomnia/API.yookassa_test-env-for-insomnia.v1-002.ru.json.zip)** (~10 Кб), разархивируйте и [импортируйте](#Импорт-коллекции) в Insomnia;
 - [ ] Используйте настройки по-умолчанию или [пропишите](#Настройка) свой shopid и секретный ключ.
 
 #### Импорт коллекции
 
-Импортируйте файл с коллекцией запросов API.Кассы в Insomnia.
+Импортируйте файл с коллекцией запросов API.ЮKassa в Insomnia.
 
 > ##### Шаг 1
 > ![Insomnia import step1](/checkout-api/sample/rest/insomnia/insomnia-import-step1.png "Insomnia import step1")
@@ -82,9 +82,9 @@
 <!--
 #### Ссылки
 * [Insomnia](https://insomnia.rest/) - удобный, бесплатный REST-клиент под все операционные системы.
-* Файл с коллекцией запросов API.Кассы
-* Документация API.Кассы
-* Гайды API.Кассы
+* Файл с коллекцией запросов API.ЮKassa
+* Документация ЮKassa
+* Гайды API.ЮKassa
 :mortar_board: Тестовые окружение для работы с нашим API, это подготовленная нашими специалистами легкий у установке комлекс
 
 -->
