@@ -4,7 +4,7 @@
 ** Внимание! ** Начиная с 04.05.2018 изменился пароль (`api_key`). Если вы использовали старый пароль, обновите его. Старый пароль ~test_OGpIHQMdVeLp1giWoPn033vKRxNUAGcAdZizIymbOfg~.
 -->
 
-[![ЮKassa](/i/yookassalogo.png "ЮKassa")](https://yookassa.ru) / [помощь](https://yookassa.ru/docs/support) / [api-докуметация](https://yookassa.ru/developers), [Checkout.js](https://yookassa.ru/developers/payment-forms/other/yc-js), [SDK](https://yookassa.ru/developers#s
+[![ЮKassa](/i/yookassalogo.png "ЮKassa")](https://yookassa.ru) / [помощь](https://yookassa.ru/docs/support) / [api-докуметация](https://yookassa.ru/developers), [Checkout.js](https://yookassa.ru/developers/payment-forms/other/yc-js), [SDK](https://yookassa.ru/developers#sdk)
 
 Тестовое окружение API.ЮKassa
 ===================================
