@@ -1,13 +1,13 @@
-[![яндекс касса](/i/yakassalogo.png "Яндекс Касса")](https://kassa.yandex.ru) / [помощь](https://yandex.ru/support/checkout/) / [api-докуметация](https://kassa.yandex.ru/docs/checkout-api/#api-yandex-kassy), [api-гайды](https://kassa.yandex.ru/docs/guides/#bystryj-start), [YandexCheckout.js](https://kassa.yandex.ru/docs/checkout-js/#yandexcheckout-js), [PHP-SDK](https://github.com/yandex-money/yandex-checkout-sdk-php), [mSDK](https://kassa.yandex.ru/docs/client-sdks/#mobil-nye-sdk), [en](https://checkout.yandex.com/docs/checkout-api/#using-the-api)
+[![ЮKassa](/i/yookassalogo.png "ЮKassa")](https://yookassa.ru) / [помощь](https://yookassa.ru/docs/support) / [api-докуметация](https://yookassa.ru/developers), [Checkout.js](https://yookassa.ru/developers/payment-forms/other/yc-js), [SDK](https://yookassa.ru/developers#sdk)
 
 Return_url. Рекомендации по реализации
 ======================================
 
-> При [создании платежа](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha) в параметре `return_url` вы передаете ссылку, которая будет работать на любом этапе платежа как ссылка [кнопки "вернуться в магазин"](/demo/020-01%20вернуться%20в%20магазин.md). В момент перехода плательщика на вашу страницу `return_url` рекомендуем выполнять [запрос о статусе платежа](https://kassa.yandex.ru/docs/checkout-api/#informaciq-o-platezhe).
+> При [создании платежа](https://yookassa.ru/developers/api#create_payment) в параметре `return_url` вы передаете ссылку, которая будет работать на любом этапе платежа как ссылка [кнопки "вернуться в магазин"](/demo/020-01%20вернуться%20в%20магазин.md). В момент перехода плательщика на вашу страницу `return_url` рекомендуем выполнять [запрос о статусе платежа](https://yookassa.ru/developers/api#get_payment).
 
 ### Как понять, от какого платежа пришел конкретный пользователь
 
-Один платеж, один `return_url`. У каждого отдельного платежа, в момент его [создания](https://kassa.yandex.ru/docs/checkout-api/#sozdanie-platezha), вы можете передавать уникальный идентификатор. Например, для платежа1, `"return_url": "https://url.test?id=100500"`, а для платежа2, `"return_url": "https://url.test?id=100700"`. Чтобы повысить точность, вы можете проверять cookie вернувшегося. Этим вы обеспечите механизм распознавания, что за пользователь к вам пришел по ссылке `return_url`.
+Один платеж, один `return_url`. У каждого отдельного платежа, в момент его [создания](https://yookassa.ru/developers/api#get_payment), вы можете передавать уникальный идентификатор. Например, для платежа1, `"return_url": "https://url.test?id=100500"`, а для платежа2, `"return_url": "https://url.test?id=100700"`. Чтобы повысить точность, вы можете проверять cookie вернувшегося. Этим вы обеспечите механизм распознавания, что за пользователь к вам пришел по ссылке `return_url`.
 
 ### Не путайте `return_url` и [URL для уведомлений](/checkout-api/031-01%20url%20для%20уведомлений.md)
 
@@ -25,7 +25,7 @@ Return_url. Рекомендации по реализации
 
 Плательщик получил смс с номера 900, подтвердил, но на стороне сбербанка в этот момент произошел сбой в компоненте оплаты. Или у мобильного оператора очередь доставки смс. Сам пользователь не нажал кнопку отправки смс или телефон по каким-то причинам не выполнил отправку смс. Факт: платеж не оплачен. На какую страницу должна вести ссылка "Вернуться в магазин" в этот момент времени? Успех? Нет. Ошибки? Нет. Промежуточный статус? Возможно. А если в момент перехода по ссылке "Вернуться в магазин" статус изменился, смс дошла, деньги списались, а вы плательщику покажете "Что-то пошло не так". В общем, довольно сложно сделать 100%-ное попадание.
 
-**Решение1**: После перехода плательщика на страницу `return_url` сделать [запрос о статусе платежа](https://kassa.yandex.ru/docs/checkout-api/#informaciq-o-platezhe), показав иформацию в зависимости от полученного статуса.
+**Решение1**: После перехода плательщика на страницу `return_url` сделать [запрос о статусе платежа](https://yookassa.ru/developers/api#get_payment), показав иформацию в зависимости от полученного статуса.
 
 | Значение status | Что сообщить покупателю |
 | --------------- | ----------------------- |
