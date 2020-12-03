@@ -56,7 +56,7 @@
 
 ## Инструкция по установке
 - [ ] Скачайте дистрибутив программы [Insomnia](https://insomnia.rest/) и установите (~65 Мб; популярный, бесплатный REST-клиент, работающий на ОС Windows, OSX и Ubuntu);
-- [ ] **[Скачайте коллекцию запросов API.ЮKassa](/checkout-api/sample/rest/insomnia/API.yookassa_test-env-for-insomnia.v1-002.ru.json.zip)** (~10 Кб), разархивируйте и [импортируйте](#Импорт-коллекции) в Insomnia;
+- [ ] **[Скачайте коллекцию запросов API.ЮKassa](/checkout-api/sample/rest/insomnia/api-test-env.yookassa.for.insomnia.v.1.0_03.12.2020.zip)** (~10 Кб), разархивируйте и [импортируйте](#Импорт-коллекции) в Insomnia;
 - [ ] Используйте настройки по-умолчанию или [пропишите](#Настройка) свой shopid и секретный ключ.
 
 #### Импорт коллекции
