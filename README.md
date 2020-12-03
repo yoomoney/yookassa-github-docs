@@ -1,1 +1,1 @@
-# yandex-money-joinup
+# yookassa-github-docs
