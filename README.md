@@ -1,1 +1,0 @@
-# yookassa-github-docs
