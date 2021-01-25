@@ -30,13 +30,13 @@
 | -------- | ----------- | ---------- |
 | [Протокол выплат](https://yookassa.ru/docs/payouts) | calypso.yamoney.ru | payouts.yookassa.ru |
 | [Протокол зачислений](https://yoomoney.ru/docs/depositions) | calypso.yamoney.ru | deposit.yoomoney.ru |
-| Протокол идентификации кошелька* (makeIdentificationDeposition) | calypso.yamoney.ru | deposit.yoomoney.ru |
+| Протокол идентификации кошелька `*` (`makeIdentificationDeposition`) | calypso.yamoney.ru | deposit.yoomoney.ru |
 
 #### Документация
 
 * [Протокол выплат](https://yookassa.ru/docs/payouts). Для контрагентов, кто выполняет зачисления на кошельки, карты, р/с или мобильные телефоны.
 * [Протокол зачислений](https://yoomoney.ru/docs/depositions). Для контрагентов банков-партнёров.
-* Протокол идентификации кошелька направляется контрагентам по запросу (в открытом доступе документации нет).
+* `*` Протокол идентификации кошелька направляется контрагентам по запросу (в открытом доступе документации нет).
 
 ### Requirements
 
