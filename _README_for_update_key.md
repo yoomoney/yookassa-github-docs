@@ -58,12 +58,16 @@ deposit.cer - ключ для дешифровки из PKCS7 формата о�
 ### Шаг 1. Упаковка запроса
 
 Сформируйте содержимое запроса и упакуйте его в PKCS7
-`openssl smime -sign -in req.xml -nointern -nodetach -nocerts -nochain -outform PEM -out req_signed.txt -signer you.cer -inkey private.key -passin pass:HIDDEN`
+```
+openssl smime -sign -in req.xml -nointern -nodetach -nocerts -nochain -outform PEM -out req_signed.txt -signer you.cer -inkey private.key -passin pass:HIDDEN
+```
 
 ### Шаг 2. Отправка запроса
 
 Отправьте запрос makeDeposition или makeIdentificationDeposition на сервер payouts.yookassa.ru:
-`curl -X POST --insecure -F file=@req_signed.txt --header "Content-type:application/pkcs7-mime" --cert you.cer --key private.key --pass HIDDEN --url https://payouts.yookassa.ru:9094/webservice/deposition/api/makeDeposition`
+```
+curl -X POST --insecure -F file=@req_signed.txt --header "Content-type:application/pkcs7-mime" --cert you.cer --key private.key --pass HIDDEN --url https://payouts.yookassa.ru:9094/webservice/deposition/api/makeDeposition
+```
  
 #### Пример тела запроса для makeDeposition (файл req.xml)
 ```
@@ -93,7 +97,7 @@ deposit.cer - ключ для дешифровки из PKCS7 формата о�
 
 #### Возможные ошибки
 - Используйте в качестве номера знак N (не используйте спецсимвол №).
-- <paymentParams></paymentParams>: не забывайте, что все дополнительные параметры (pdr_birthDate, pof_offerAccepted и т.д.) должны быть внутри paymentParams.
+- `<paymentParams></paymentParams>`: не забывайте, что все дополнительные параметры (`pdr_birthDate`, `pof_offerAccepted` и т.д.) должны быть внутри paymentParams.
 
 ### Шаг 3. Дешифровка ответа
 
