@@ -11,7 +11,7 @@
 1. Найти в вашей системе где размещен старый ключ. Вот копия этого файла https://yadi.sk/d/crccbNzRy933MQ, она поможет вам найти этот файл в вашей системе.
 2. Взять файл new_key_cer_YooMoney_deposit_response_verify_with_all_chain по ссылке https://yadi.sk/d/MOfnA1IlB1F2Yg и во вторник, 09.02.2021 в 12:00 (время московское) замените в своей системе старый ключ на новый.
 
-#### Содержимое директории https://yadi.sk/d/MOfnA1IlB1F2Yg:
+#### [Содержимое директории](https://yadi.sk/d/MOfnA1IlB1F2Yg):
 
 1. old_key_cer_payouts_response_verify_until_12_02_21 - текущий ключ, которым вы проверяете нашу подпись;
 2. new_key_cer_YooMoney_deposit_response_verify_with_all_chain - новый ключ, которым надо заменить старый ключ в вашей системе, 9 февраля 2021 года в 12:00;
