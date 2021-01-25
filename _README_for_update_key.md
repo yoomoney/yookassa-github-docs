@@ -30,11 +30,13 @@
 | -------- | ----------- | ---------- |
 | [Протокол выплат](https://yookassa.ru/docs/payouts) | calypso.yamoney.ru | payouts.yookassa.ru |
 | [Протокол зачислений](https://yoomoney.ru/docs/depositions) | calypso.yamoney.ru | deposit.yoomoney.ru |
+| Протокол идентификации кошелька* (makeIdentificationDeposition) | calypso.yamoney.ru | deposit.yoomoney.ru |
 
 #### Документация
 
 * [Протокол выплат](https://yookassa.ru/docs/payouts). Для контрагентов, кто выполняет зачисления на кошельки, карты, р/с или мобильные телефоны.
 * [Протокол зачислений](https://yoomoney.ru/docs/depositions). Для контрагентов банков-партнёров.
+* Протокол идентификации кошелька направляется контрагентам по запросу (в открытом доступе документации нет).
 
 ### Requirements
 
@@ -106,6 +108,7 @@ curl -X POST --insecure -F file=@req_signed.txt --header "Content-type:applicati
 ```
 
 #### Возможные ошибки
+
 - Используйте в качестве номера знак N (не используйте спецсимвол №).
 - `<paymentParams></paymentParams>`: не забывайте, что все дополнительные параметры (`pdr_birthDate`, `pof_offerAccepted` и т.д.) должны быть внутри paymentParams.
 
