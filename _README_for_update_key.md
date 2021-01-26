@@ -17,8 +17,6 @@
 3. new_key_p7b_YooMoney_deposit_response_verify_with_all_chain - этот же ключ, что в п.2, но в формате p7b (некоторым системам нужен ключ не в формате cer, а в формате p7b);
 4. yoomoney-all-chain - все наши цепочки сертификации (на случай, если у вас в системе они требуются); эти цепочки добавлены в файл new_key_cer_YooMoney_deposit_response_verify_with_all_chain.
 
-
-
 #### N.B.
 
 * Ниже представлены примеры запросов makeDeposition или makeIdentificationDeposition с помощью утилиты curl и дешифровка полученного ответа c помощью утилиты openssl.
@@ -181,7 +179,7 @@ O7MZyy3xg64XeaDqG+eD6/3D9GN8Q7J3KDNK9SdjqbmQY6qFCNq1BGEb0zHOs7Ae
 
 ===============================================================================================================
 
-### errorDepositionNotificationRequest
+### [errorDepositionNotificationRequest](https://yookassa.ru/docs/payouts/api/error-deposition-notification)
 
 Функциональность дешифровки ответа errorDepositionNotificationRequest (ошибки при зачислениях на карты) не относится к "Шагу 3" (см. выше)
 
