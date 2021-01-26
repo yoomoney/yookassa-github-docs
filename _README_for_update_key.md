@@ -59,7 +59,7 @@ you.cer - сертификат, который выдан контрагенту
 private.key - ваш файл секретного ключа, на основе которого вы сделали CSR-запрос, и мы (ЮKassa) на основе него сделали you.cer;
 deposit.cer - ключ для дешифровки из PKCS7 формата ответов от ЮKassa на запросы makeDeposition или makeIdentificationDeposition;
 
-### Модифицация параметров в curl и openssl 
+### Модификация параметров в curl и openssl 
 
 1. -passin
 Использование пароля в private.key. Модификация `-passin pass:HIDDEN` в запросах: если вы создавали в п.2 (см. выше) приватный ключ (private.key) с паролем, то вместо HIDDEN напишите свой пароль, например, `-passin pass:coolpassword`; если без пароля, то передавайте `-passin pass:`, без HIDDEN.
