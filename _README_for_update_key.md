@@ -113,7 +113,7 @@ curl -X POST --insecure -F file=@req_signed.txt --header "Content-type:applicati
 
 ### Шаг 3. Дешифровка ответа
 
-Если вы пришли к этому пункту после рассылки про обновление ключа 09.02.2021, то вам потребуется данный "Шаг 3" и возможно "Шаг 1" и "Шаг 2". Раздел этого документа про "errorDepositionNotificationRequest" вам НЕ нужен. 
+Если вы пришли к этому пункту после рассылки про обновление ключа 09.02.2021, то вам потребуется данный "Шаг 3" и возможно "Шаг 1" и "Шаг 2".
 
 Задача "Шага 3" - это дешифровка полученного ответа от payouts.yookassa.ru на ваш запрос makeDeposition или makeIdentificationDeposition (см. "Шаг 2" выше) и проверка подписи ответа. Напоминаем, что до декабря 2020 использовался хост calypso.yamoney.ru и этот хост будет работать весь 2021 год, но мы рекомендуем перейти на новый хост -- payouts.yookassa.ru.
 
@@ -176,6 +176,7 @@ O7MZyy3xg64XeaDqG+eD6/3D9GN8Q7J3KDNK9SdjqbmQY6qFCNq1BGEb0zHOs7Ae
 ```
 Есть вопросы? Пишите на b2b_support@yoomoney.ru
 
+<!--
 ===============================================================================================================
 
 ### [errorDepositionNotificationRequest](https://yookassa.ru/docs/payouts/api/error-deposition-notification)
@@ -221,3 +222,4 @@ on this server.</p>
 
 ```A=$(echo "<makeDepositionRequest agentId=\"0000\" clientOrderId=\"123\" requestDT=\"`date +%Y-%m-%dT%H:%M:%S`\" dstAccount=\"257003392579\" amount=\"110.00\" currency=\"10643\" contract=\"test_test\"><paymentParams><skr_destinationCardSynonim>7yJteyIZuXB4B6mOMurvxyAjUKAZ.SC.201710</skr_destinationCardSynonim><pdr_firstName>Гнилица</pdr_firstName><pdr_middleName>Иван</pdr_middleName><pdr_lastName>Иванов</pdr_lastName><pdr_docNumber>1111111111</pdr_docNumber><pdr_postcode>020202</pdr_postcode><pdr_country>643</pdr_country><pdr_city>Город</pdr_city><pdr_address>улица улица1</pdr_address><pdr_birthDate>01.01.1990</pdr_birthDate><pdr_birthPlace>Город</pdr_birthPlace><pdr_docIssueYear>2008</pdr_docIssueYear><pdr_docIssueMonth>01</pdr_docIssueMonth><pdr_docIssueDay>10</pdr_docIssueDay><pdr_docIssuedBy>ОВД г. улица</pdr_docIssuedBy><pof_offerAccepted>1</pof_offerAccepted><smsPhoneNumber>7999999999</smsPhoneNumber></paymentParams></makeDepositionRequest>" | openssl smime -sign -signer /var/www/www-root/data/www/apikassa.tk/KeysForApi/gnilitsa_gates.cer -inkey /var/www/www-root/data/www/apikassa.tk/KeysForApi/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:*****) && curl -v -H "Content-Type: application/pkcs7-mime" -k --cert /var/www/www-root/data/www/apikassa.tk/KeysForApi/gnilitsa_gates.cer --key /var/www/www-root/data/www/apikassa.tk/KeysForApi/private.key --pass ***** --request POST "https://payouts.yookassa.ru:9094/webservice/deposition/api/makeDeposition" --data "$A"
 ```
+-->
