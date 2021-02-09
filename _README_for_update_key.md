@@ -48,11 +48,11 @@
 
 ###  Используемые в примерах файлы
 
-req.xml - тело запроса makeDeposition до упаковки в PKCS7 (см. пример ниже);
-req_signed.txt - упакованный в PKCS7 запрос req.xml;
-you.cer - сертификат, который выдан контрагенту (см. п.2 выше);
-private.key - ваш файл секретного ключа, на основе которого вы сделали CSR-запрос, и мы (ЮKassa) на основе него сделали you.cer;
-deposit.cer - ключ для дешифровки из PKCS7 формата ответов от ЮKassa на запросы makeDeposition или makeIdentificationDeposition;
+* req.xml - тело запроса makeDeposition до упаковки в PKCS7 (см. пример ниже);
+* req_signed.txt - упакованный в PKCS7 запрос req.xml;
+* you.cer - сертификат, который выдан контрагенту (см. п.2 выше);
+* private.key - ваш файл секретного ключа, на основе которого вы сделали CSR-запрос, и мы (ЮKassa) на основе него сделали you.cer;
+* deposit.cer - ключ для дешифровки из PKCS7 формата ответов от ЮKassa на запросы makeDeposition или makeIdentificationDeposition;
 
 ### Модификация параметров в curl и openssl 
 
