@@ -51,12 +51,12 @@
 обновленного Виджета во всех интеграциях, которые используют наши контрагенты).
 
 Подробности об обновлении можно прочесть здесь - 
-https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/31-03-2021-yookassa-widjet-update.md.
+https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/2021/03/31-yookassa-widjet-update.md.
 
 #### Хочу проверить заранее
 
 После обновления все будет работать без ошибок, как и прежде. Новым для вас может стать то, как выглядит 
 всплывающее окно 3DS в дизайне вашего сайта. Это можно проверить следующим образом.
-https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/31-03-2021-yookassa-widjet-update.md#как-протестировать
+https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/2021/03/31-yookassa-widjet-update.md#как-протестировать
 
 ```
