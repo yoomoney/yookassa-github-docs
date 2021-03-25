@@ -41,15 +41,13 @@
 
 По логам обращений за февраль-март 2021 мы выявили тех, кто пока не обновил свои платежные скрипты и их запросы поступают на старый `money.yandex.ru/eshop.xml`. В какой-то момент хост `money.yandex.ru` может перестать работать (точных сроков, к сожалению, сказать нельзя), поэтому наилучшим решением будет - обновить ваши скрипты, прописав в них новый хост `yoomoney.ru`.
 
-### Старый и новый хосты
-
-> Напоминаем, что до декабря 2020 использовался хост calypso.yamoney.ru и этот хост будет работать весь 2021 год, но мы рекомендуем перейти на новый хост согласно используемому у вас протоколу.
+### Старые и новые хосты
 
 | Протокол | Старый хост | Новый хост |
 | -------- | ----------- | ---------- |
-| **Платежи** | 
+|  | 
 | [MWS](https://yookassa.ru/docs/payment-solution/payment-management/basics) | `penelope.yamoney.ru` | `shop.yookassa.ru` |
-| **Зачисления** |
+|  |
 | [Протокол выплат](https://yookassa.ru/docs/payouts) | `calypso.yamoney.ru` | `payouts.yookassa.ru` |
 | [Протокол зачислений](https://yoomoney.ru/docs/depositions) | `calypso.yamoney.ru` | `deposit.yoomoney.ru` |
 | Протокол идентификации кошелька `*` (`makeIdentificationDeposition`) | `calypso.yamoney.ru` | `deposit.yoomoney.ru` |
