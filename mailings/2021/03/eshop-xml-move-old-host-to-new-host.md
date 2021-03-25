@@ -19,7 +19,7 @@
 
 * [Документация по старому платежному протоколу](https://yookassa.ru/docs/payment-solution)
 * [Подробности о смене бренда](https://new.yookassa.ru/)
-* [Гайд по всем изменениям](https://yoomoney.ru/i/html-letters/Tech_Guide_2020_kassa_rus.pdf)
+* [Гайд по всем техническим изменениям](https://yoomoney.ru/i/html-letters/Tech_Guide_2020_kassa_rus.pdf)
 
 
 ### Что изменится 
