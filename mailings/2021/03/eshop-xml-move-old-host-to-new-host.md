@@ -60,7 +60,9 @@
 
 Платежи должны начать ходить на новый адрес yoomoney.ru, а не на старый money.yandex.ru, 
 как это происходит по вашему магазину|магазинам сейчас.
-Подробнее о том, как обновиться https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/2021/03/eshop-xml-move-old-host-to-new-host.md
+
+Подробнее о том, как обновиться
+https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/2021/03/eshop-xml-move-old-host-to-new-host.md
 
 #### А если не обновлять?
 
