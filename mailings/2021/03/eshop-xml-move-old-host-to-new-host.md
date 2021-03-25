@@ -45,7 +45,9 @@
 
 | Протокол | Старый хост | Новый хост |
 | -------- | ----------- | ---------- |
-|  | 
+|  |
+| [API новый платежный](https://yookassa.ru/developers/using-api/basics) | `payment.yandex.net/api/v3` | `api.yookassa.ru/v3/` |
+| [Старый платежный протокол](https://yookassa.ru/docs/payment-solution) | `money.yandex.ru/eshop.xml` | `yoomoney.ru/eshop.xml`
 | [MWS](https://yookassa.ru/docs/payment-solution/payment-management/basics) | `penelope.yamoney.ru` | `shop.yookassa.ru` |
 |  |
 | [Протокол выплат](https://yookassa.ru/docs/payouts) | `calypso.yamoney.ru` | `payouts.yookassa.ru` |
