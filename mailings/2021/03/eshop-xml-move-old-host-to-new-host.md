@@ -24,8 +24,8 @@
 
 ### Что изменится 
 
-1. После смены хоста в action, платежи будут работать также. Это единственное изменение, которое требуется, чтобы вы внесли в код своей системы, где есть взаимодействие с нами.
-2. 
+1. После смены хоста в `action` вашей платежной формы, платежи будут работать так же. Это единственное изменение, которое требуется, чтобы вы внесли в код своей системы, где есть взаимодействие с нами.
+2. Если вы интегрировали еще какие-то наши протоколы, в них также надо обновить хост. См. таблицу хостов ниже.
 
 ### Как протестировать
 
@@ -47,9 +47,12 @@
 
 | Протокол | Старый хост | Новый хост |
 | -------- | ----------- | ---------- |
-| [Протокол выплат](https://yookassa.ru/docs/payouts) | calypso.yamoney.ru | payouts.yookassa.ru |
-| [Протокол зачислений](https://yoomoney.ru/docs/depositions) | calypso.yamoney.ru | deposit.yoomoney.ru |
-| Протокол идентификации кошелька `*` (`makeIdentificationDeposition`) | calypso.yamoney.ru | deposit.yoomoney.ru |
+| **Платежи** | 
+| [MWS](https://yookassa.ru/docs/payment-solution/payment-management/basics) | `penelope.yamoney.ru` | `shop.yookassa.ru` |
+| **Зачисления** |
+| [Протокол выплат](https://yookassa.ru/docs/payouts) | `calypso.yamoney.ru` | `payouts.yookassa.ru` |
+| [Протокол зачислений](https://yoomoney.ru/docs/depositions) | `calypso.yamoney.ru` | `deposit.yoomoney.ru` |
+| Протокол идентификации кошелька `*` (`makeIdentificationDeposition`) | `calypso.yamoney.ru` | `deposit.yoomoney.ru` |
 
 #### Текст рассылки
 
