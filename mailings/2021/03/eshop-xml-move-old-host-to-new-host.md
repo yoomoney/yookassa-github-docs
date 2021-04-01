@@ -26,8 +26,8 @@
 
 ### CMS
 
-1. Если у вас CMS, найдите инструкцию на нашем сайте https://yookassa.ru/integration/ через поиск:  
-![image](/i/how-to-find-yookassa-cms-module.png)
+1. Если у вас CMS, найдите инструкцию на нашем сайте https://yookassa.ru/integration/ через поиск:
+> ![image](/i/how-to-find-yookassa-cms-module.png)
 2. Прочитайте инструкцию по установке, настройке, скачайте обновленный модуль и установите его. Или выполните обновление так, как это делается для вашей CMS.
 
 ### Cамописное ПО
