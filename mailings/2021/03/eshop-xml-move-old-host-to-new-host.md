@@ -24,7 +24,7 @@
 
 ## Что сделать, что изменится
 
-### CMS|SaaS|CRM систем
+### CMS
 
 1. Если у вас CMS, найдите инструкцию на нашем сайте https://yookassa.ru/integration/ через поиск:  
 ![image](/i/how-to-find-yookassa-cms-module.png)
