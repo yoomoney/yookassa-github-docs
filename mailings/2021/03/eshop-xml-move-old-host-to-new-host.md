@@ -22,7 +22,7 @@
 * [Обзор по всем техническим изменениям](https://yoomoney.ru/i/html-letters/Tech_Guide_2020_kassa_rus.pdf)
 
 
-## Что сделать, что изменится
+## Что сделать
 
 ### CMS
 
