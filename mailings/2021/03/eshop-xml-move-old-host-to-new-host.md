@@ -115,3 +115,19 @@ https://github.com/yoomoney/yookassa-github-docs/blob/master/mailings/2021/03/es
 
 Если остались вопросы или что-то не получается, напишите нам — на b2b_support@yoomoney.ru или в ответ на это письмо.
 ```
+
+<!-- 
+# Было
+BASE_URL:"https://payment.yandex.net",
+TOKENIZE_URL:"payment-api/checkout-js/api/v1/tokenize",
+TOKENIZE_CSC_URL:"payment-api/checkout-js/api/v1/tokenize/csc",
+BUILD_NAME:"yandex-checkout.js",
+ThreatMetrixServerHost:"https://s4.money.yandex.net/"
+
+# Стало
+BASE_URL:"https://sdk.yookassa.ru",
+TOKENIZE_URL:"checkout-js/api/v1/tokenize",
+TOKENIZE_CSC_URL:"checkout-js/api/v1/tokenize/csc",
+BUILD_NAME:"yoomoney-checkout.js",
+ThreatMetrixServerHost:"https://s4.partner.yoomoney.ru/"
+-->
