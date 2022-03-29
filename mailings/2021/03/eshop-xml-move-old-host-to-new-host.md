@@ -59,6 +59,7 @@
 | [Протокол выплат](https://yookassa.ru/docs/payouts) | `calypso.yamoney.ru` | `payouts.yookassa.ru` |
 | [Протокол зачислений](https://yoomoney.ru/docs/depositions) | `calypso.yamoney.ru` | `deposit.yoomoney.ru` |
 | Протокол идентификации кошелька `*` (`makeIdentificationDeposition`) | `calypso.yamoney.ru` | `deposit.yoomoney.ru` |
+| Host2host PCI DSS протокол | `paymentcard.yamoney.ru` | `paymentcard.yoomoney.ru` | 
 
 ---
 
