@@ -131,7 +131,8 @@
 - old API endpoint: https://payment.yandex.net/api/v3/
 + new API endpoint: https://api.yookassa.ru/v3/
 
-Подробнее (по этой ссылке мы собрали все необходимые ответы по данному кейсу; страница обновляется по мере поступления новых вопросов): 
+Подробнее (по этой ссылке мы собрали все необходимые ответы по данному кейсу;  
+страница обновляется по мере поступления новых вопросов): 
 https://github.com/yoomoney/yookassa-github-docs/blob/master/checkout-api/
 
 #### А если не обновлять?
