@@ -1,6 +1,6 @@
 [![ЮKassa](/i/yookassalogo.png "ЮKassa")](https://yookassa.ru) / [помощь](https://yookassa.ru/docs/support) / [api-докуметация](https://yookassa.ru/developers), [Checkout.js](https://yookassa.ru/developers/payment-forms/other/yc-js), [SDK](https://yookassa.ru/developers/using-api/using-sdks)
 
-# Замените старый хост payment.yandex.net на новый api.yookassa.ru
+# Замените хост payment.yandex.net на api.yookassa.ru
 
 > Эта страница предназначена для тех контрагентов, кто принимает платежи с помощью **[платежного протокола API ЮKassa](https://yookassa.ru/developers/using-api/interaction-format)** и в качестве адреса для отправки запросов (API endpoint) использует старый хост `payment.yandex.net`.  
 > **Обязательно покажите это письмо вашему техническому специалисту или программисту**, чтобы он выполнил необходимое обновление на вашей сторонее.
