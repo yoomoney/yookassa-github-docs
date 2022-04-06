@@ -133,7 +133,7 @@
 
 Подробнее (по этой ссылке мы собрали все необходимые ответы по данному кейсу;  
 страница обновляется по мере поступления новых вопросов): 
-https://github.com/yoomoney/yookassa-github-docs/blob/master/checkout-api/
+https://github.com/yoomoney/yookassa-github-docs/blob/master/checkout-api/update_old_host_yandex_to_new_yookassa_howto.md
 
 #### А если не обновлять?
 
