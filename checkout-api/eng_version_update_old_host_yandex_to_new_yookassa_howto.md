@@ -53,7 +53,7 @@ In general, the procedure for updating the [SDK](https://yookassa.ru/en/develope
 
 ## Other issues
 
-### // I've already upgraded.
+### // I've already upgraded
 
 **Q:** I already updated my software and|or the CMS module, why are you writing to me?
 
