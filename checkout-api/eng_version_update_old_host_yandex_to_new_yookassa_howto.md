@@ -79,5 +79,29 @@ In general, the procedure for updating the [SDK](https://yookassa.ru/en/develope
 ### Mailing text
 
 ```
+Subject: Change the host of payment.yandex.net in your shopid=100500 settings
+Body:
+@Colleagues,
 
+According to your shopid=100500 we see that for payments (sending requests via Yukassa payment protocol from your software) you use the old host payment.yandex.net (address belongs to Yandex).
+
+You need to start using the new host api.yookassa.ru (belongs to YooMoney|Yookassa), otherwise payments can stop working until the end of April 2022.
+
+Show this letter to your technician or programmer so he/she can perform the necessary update on your side.
+
+### What you need to do
+
+(the developer will understand these two lines below)
+
+- old API endpoint: https://payment.yandex.net/api/v3/
++ new API endpoint: https://api.yookassa.ru/v3/
+
+### Details
+
+https://clck.ru/enrpY (eng)
+https://clck.ru/emJBU (ru)
+
+(we've compiled all the answers you need for this case at this link; the page is updated as new questions come in) 
+
+If you don't have enough information, please reply to this email.
 ```
