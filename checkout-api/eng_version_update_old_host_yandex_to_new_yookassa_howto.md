@@ -76,7 +76,7 @@ In general, the procedure for updating the [SDK](https://yookassa.ru/en/develope
 * [Tech_Guide_2020_kassa_eng.pdf](https://yoomoney.ru/i/html-letters/Tech_Guide_2020_kassa_eng.pdf)
 * Official News "[YooMoney payment service completes renaming](https://yoomoney.ru/page?id=536896&lang=en)" (November 12, 2020)
 
-### Mailing text
+## Mailing text
 
 ```
 Subject: Change the host of payment.yandex.net in your shopid=100500 settings
@@ -108,6 +108,6 @@ https://clck.ru/emJBU (ru)
 If you don't have enough information, please reply to this email.
 ```
 
-### I have a question
+## I have a question
 
 If you still have questions or if something doesn't work, email us - at b2b_support@yoomoney.ru or in response to our email.
