@@ -69,7 +69,7 @@ In general, the procedure for updating the [SDK](https://yookassa.ru/en/develope
 
 **Q:** Why do we have to do all this in the first place?
 
-**A:** *Yandex.Money payment service, which is part of Sberbank's ecosystem, changed its legal entity name - Yandex.Money LLC was renamed to Yumani LLC in the Unified State Register of Legal Entities. This was another step in the final rebranding.*
+**A:** *Yandex.Money payment service, which is part of Sberbank's ecosystem, changed its legal entity name - Yandex.Money LLC was renamed to YooMoney NBCO LLC in the Unified State Register of Legal Entities. This was another step in the final rebranding.*
 
 *On the 17th of September 2020 the company announced the renaming of the service into YooMoney, the payment solution for business has changed its name to YooKassa. Until December 15 2020 the service will use the old and new brands, after this date the service will use only the new names - YooMoney and YooKassa ...*.
 
