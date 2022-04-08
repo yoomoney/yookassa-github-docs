@@ -147,6 +147,6 @@ https://clck.ru/enrpY (eng)
 Пожалуйста, проверьте, чтобы обновление было выполнено на всех учетных записях (shopid) и сайтах, которые вы используете.
 ```
 
-#### I have a question.
+#### У меня есть вопрос
 
-If you still have questions or if something doesn't work, email us - at b2b_support@yoomoney.ru or in response to our email.
+Если остались вопросы или что-то не получается, напишите нам — на b2b_support@yoomoney.ru или в ответ на наше письмо.
