@@ -53,19 +53,19 @@ In general, the procedure for updating the [SDK](https://yookassa.ru/en/develope
 
 ## Other issues
 
-### // I've already upgraded
+### I've already upgraded
 
 **Q:** I already updated my software and|or the CMS module, why are you writing to me?
 
 **A:** The sample was taken from the logs for March 2022. If you've already updated, that's good. If you're not sure, email us and we'll see where your API requests are currently going.
 
-### // Can't update
+### Can't update
 
 **Q:** What if I don't have time to update?
 
 **A:** Unfortunately, payments will stop working. We are doing our best to make all old hosts (which belong to Yandex) work as long as possible. **Try to upgrade by the end of April 2022**.
 
-### // Why do we have to do all this in the first place?
+### Why do we have to do all this in the first place?
 
 **Q:** Why do we have to do all this in the first place?
 
