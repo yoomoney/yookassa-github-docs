@@ -1,4 +1,4 @@
-[![ЮKassa](/i/yookassalogo.png)](https://yookassa.ru/en/) | [help](https://yookassa.ru/docs/support?lang=en) | [api-documentation](https://yookassa.ru/en/developers), [Checkout.js](https://yookassa.ru/en/developers/payment-acceptance/integration-scenarios/checkout-js/basics) | [SDK](https://yookassa.ru/en/developers/using-api/using-sdks)
+[![ЮKassa](/i/yookassalogo.png)](https://yookassa.ru/en/), [help](https://yookassa.ru/docs/support?lang=en), [api-documentation](https://yookassa.ru/en/developers), [Checkout.js](https://yookassa.ru/en/developers/payment-acceptance/integration-scenarios/checkout-js/basics), [SDK](https://yookassa.ru/en/developers/using-api/using-sdks)
 
 # Replace host payment.yandex.net with api.yookassa.ru
 
