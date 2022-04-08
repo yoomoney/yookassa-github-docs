@@ -34,7 +34,7 @@
 
 #### Композер выдает предупреждения о переходе
 
-Решение https://github.com/yoomoney/yookassa-sdk-php/issues/15
+Решение: https://github.com/yoomoney/yookassa-sdk-php/issues/15
 
 ## CMS
 
