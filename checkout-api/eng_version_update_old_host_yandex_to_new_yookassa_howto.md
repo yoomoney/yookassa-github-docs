@@ -76,7 +76,7 @@ In general, the procedure for updating the [SDK](https://yookassa.ru/en/develope
 * [Tech_Guide_2020_kassa_eng.pdf](https://yoomoney.ru/i/html-letters/Tech_Guide_2020_kassa_eng.pdf)
 * Official News "[YooMoney payment service completes renaming](https://yoomoney.ru/page?id=536896&lang=en)" (November 12, 2020)
 
-### Текст рассылки
+### Mailing text
 
 ```
 
