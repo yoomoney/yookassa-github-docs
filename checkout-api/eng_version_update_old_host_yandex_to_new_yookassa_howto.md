@@ -7,7 +7,7 @@
 
  ### Details
  
- Until the end of April 2022, if you (or your technical experts, developers) do not replace the old host in the code of your system with the new one, the payments made with [payment protocol API UKasa](https://yookassa.ru/en/developers/using-api/interaction-format) will stop working.
+ Until the end of April 2022, if you (or your technical experts, developers) do not replace the old host in the code of your system with the new one, the payments made with [payment protocol API Yoomoney](https://yookassa.ru/en/developers/using-api/interaction-format) will stop working.
  
 ### Briefly about what needs to be done
 ```
