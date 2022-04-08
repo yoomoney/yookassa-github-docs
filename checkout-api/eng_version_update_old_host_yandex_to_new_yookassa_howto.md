@@ -83,9 +83,11 @@ Subject: Change the host of payment.yandex.net in your shopid=100500 settings
 Body:
 @Colleagues,
 
-According to your shopid=100500 we see that for payments (sending requests via YooMoney payment protocol from your software) you use the old host payment.yandex.net (address belongs to Yandex).
+According to your shopid=100500 we see that for payments (sending requests via YooMoney payment protocol 
+from your software) you use the old host payment.yandex.net (address belongs to Yandex).
 
-You need to start using the new host api.yookassa.ru (belongs to YooMoney|Yookassa), otherwise payments can stop working until the end of April 2022.
+You need to start using the new host api.yookassa.ru (belongs to YooMoney|Yookassa), otherwise payments 
+can stop working until the end of April 2022.
 
 Show this letter to your technician or programmer so he/she can perform the necessary update on your side.
 
