@@ -107,3 +107,7 @@ https://clck.ru/emJBU (ru)
 
 If you don't have enough information, please reply to this email.
 ```
+
+#### I have a question
+
+If you still have questions or if something doesn't work, email us - at b2b_support@yoomoney.ru or in response to our email.
