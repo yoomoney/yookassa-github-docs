@@ -21,7 +21,7 @@
 
 ## yoo_money vs yandex_money
 
->> При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода "yandex_money" на "yoo_money"
+При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода "yandex_money" на "yoo_money".
 
 * Обновишись для передачи запросов на новый хост, передавайте нам `yoo_money` если необходима оплата методом [электронный кошелек ЮMoney](https://yookassa.ru/developers/payment-acceptance/integration-scenarios/manual-integration/yoo-money#юmoney).
 * В уведомлениях о платеже методом `yoo_money` вы будете получить `yoo_money`. В GET запросе (в объекте платежа), также  вы будете получить `yoo_money`.
