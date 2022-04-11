@@ -28,7 +28,7 @@
 * Важный момент: если вы создали платёж `"yandex_money"` со старым URL (https://payment.yandex.net/api/v3/), уведомления по этому платежу придут без изменений (метод платежа будет `"yandex_money"`). Но если сделать запрос на новый хост, `GET https://api.yookassa.ru/v3/payments/{{id}}`, по такому платежу код способа оплаты в запросе деталей этого платежа GET /payments по новому URL будет новый — `"yoo_money"`.
 * Если отправить запрос на создание платежа платежным методом `"yandex_money"` (старое название) на новый хост https://api.yookassa.ru/api/v3/, вы получите ошибку, что такого метода не существует. Поэтому на новый хост нужно делать запрос только с новым названием метода -- "yoo_money".
 
-## cancellation_details party yoo_kassa
+## cancellation_details party yoo_money
 
 [В причинах ошибки или отмены платежа](https://yookassa.ru/developers/payment-acceptance/after-the-payment/declined-payments#cancellation-details-party) в уведомлении о платеже или ответе на GET запрос, следующее изменение:
 
