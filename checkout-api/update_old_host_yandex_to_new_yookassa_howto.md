@@ -21,7 +21,7 @@
 
 ## yoo_money vs yandex_money
 
-При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода "yandex_money" на "yoo_money".
+При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода `"yandex_money"` на `"yoo_money"`.
 
 <details><summary>OLD POST payment.yandex.ru</summary>
     
