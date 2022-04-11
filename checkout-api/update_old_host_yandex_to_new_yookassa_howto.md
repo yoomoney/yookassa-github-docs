@@ -11,8 +11,17 @@
 
 ### Кратко о том, что необходимо сделать
 ```
-- old API endpoint: https://payment.yandex.net/api/v3/
-+ new API endpoint: https://api.yookassa.ru/v3/
+# API endpoint
+- old: https://payment.yandex.net/api/v3/
++ new: https://api.yookassa.ru/v3/
+
+# payment_method_data
+- "yandex_money"
++ "yoo_money"
+
+# cancellation_details
+- "party" : "yandex_checkout"
++ "party" : "yoo_money"
 ```
 
 # Ответы на вопросы
