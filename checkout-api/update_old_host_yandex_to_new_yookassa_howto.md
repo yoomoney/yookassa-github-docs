@@ -50,6 +50,8 @@ content-type: application/json
 
 <details><summary>NEW POST api.yookassa.ru</summary>
 
+> Обновишись для передачи запросов на новый хост, передавайте нам `yoo_money` если необходима оплата методом [электронный кошелек ЮMoney](https://yookassa.ru/developers/payment-acceptance/integration-scenarios/manual-integration/yoo-money#юmoney).
+
 ```CSS
 ### yoo_money
 POST https://api.yookassa.ru/v3/payments
@@ -73,8 +75,7 @@ content-type: application/json
 ```
 </details>
 
-   * Обновишись для передачи запросов на новый хост, передавайте нам `yoo_money` если необходима оплата методом [электронный кошелек ЮMoney](https://yookassa.ru/developers/payment-acceptance/integration-scenarios/manual-integration/yoo-money#юmoney).
-   * В уведомлениях о платеже методом `yoo_money` вы будете получить `yoo_money`. В GET запросе (в объекте платежа), также  вы будете получить `yoo_money`.
+   * В уведомлениях о платеже методом `yoo_money` вы будете получить `yoo_money`. В GET запросе (в объекте платежа), также вы будете получить `yoo_money`.
    * Важный момент: если вы создали платёж `"yandex_money"` со старым URL (https://payment.yandex.net/api/v3/), уведомления по этому платежу придут без изменений (метод платежа будет `"yandex_money"`). Но если сделать запрос на новый хост, `GET https://api.yookassa.ru/v3/payments/{{id}}`, по такому платежу код способа оплаты в запросе деталей этого платежа GET /payments по новому URL будет новый — `"yoo_money"`.
    * Если отправить запрос на создание платежа платежным методом `"yandex_money"` (старое название) на новый хост https://api.yookassa.ru/api/v3/, вы получите ошибку, что такого метода не существует. Поэтому на новый хост нужно делать запрос только с новым названием метода -- "yoo_money".
 
