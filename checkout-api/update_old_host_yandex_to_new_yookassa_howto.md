@@ -23,6 +23,64 @@
 
 При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода "yandex_money" на "yoo_money".
 
+<details><summary>OLD POST https://payment.yandex.ru/v3/payments yandex_money</summary>
+<p>
+
+#### Пример создания платежа на старый хост
+
+```
+POST https://payment.yandex.ru/v3/payments
+authorization: Basic {{token}}
+idempotence-key: {{$guid}}
+content-type: application/json
+
+{
+    "amount": {
+        "value": "10.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "yandex_money"
+    },
+    "confirmation": {
+        "type": "redirect",
+        "return_url": "https://url.to.you_return_page"
+    }
+}
+```
+
+</p>
+</details>
+
+<details><summary>NEW POST https://api.yookassa.ru/v3/payments yoo_money</summary>
+<p>
+
+#### Пример создания платежа на НОВЫЙ хост
+
+```
+POST https://api.yookassa.ru/v3/payments
+authorization: Basic {{token}}
+idempotence-key: {{$guid}}
+content-type: application/json
+
+{
+    "amount": {
+        "value": "10.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "yoo_money"
+    },
+    "confirmation": {
+        "type": "redirect",
+        "return_url": "https://url.to.you_return_page"
+    }
+}
+```
+
+</p>
+</details>
+
 * Обновишись для передачи запросов на новый хост, передавайте нам `yoo_money` если необходима оплата методом [электронный кошелек ЮMoney](https://yookassa.ru/developers/payment-acceptance/integration-scenarios/manual-integration/yoo-money#юmoney).
 * В уведомлениях о платеже методом `yoo_money` вы будете получить `yoo_money`. В GET запросе (в объекте платежа), также  вы будете получить `yoo_money`.
 * Важный момент: если вы создали платёж `"yandex_money"` со старым URL (https://payment.yandex.net/api/v3/), уведомления по этому платежу придут без изменений (метод платежа будет `"yandex_money"`). Но если сделать запрос на новый хост, `GET https://api.yookassa.ru/v3/payments/{{id}}`, по такому платежу код способа оплаты в запросе деталей этого платежа GET /payments по новому URL будет новый — `"yoo_money"`.
