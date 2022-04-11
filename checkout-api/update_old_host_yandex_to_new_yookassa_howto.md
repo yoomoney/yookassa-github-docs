@@ -23,12 +23,10 @@
 
 При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода "yandex_money" на "yoo_money".
 
-<details><summary>OLD POST https://payment.yandex.ru/v3/payments yandex_money</summary>
-<p>
-
-#### Пример создания платежа на старый хост
-
+<details><summary>OLD POST payment.yandex.ru</summary>
+    
 ```
+### yandex_money
 POST https://payment.yandex.ru/v3/payments
 authorization: Basic {{token}}
 idempotence-key: {{$guid}}
@@ -48,16 +46,12 @@ content-type: application/json
     }
 }
 ```
-
-</p>
 </details>
 
 <details><summary>NEW POST https://api.yookassa.ru/v3/payments yoo_money</summary>
-<p>
-
-#### Пример создания платежа на НОВЫЙ хост
 
 ```
+### yoo_money
 POST https://api.yookassa.ru/v3/payments
 authorization: Basic {{token}}
 idempotence-key: {{$guid}}
@@ -77,8 +71,6 @@ content-type: application/json
     }
 }
 ```
-
-</p>
 </details>
 
 * Обновишись для передачи запросов на новый хост, передавайте нам `yoo_money` если необходима оплата методом [электронный кошелек ЮMoney](https://yookassa.ru/developers/payment-acceptance/integration-scenarios/manual-integration/yoo-money#юmoney).
