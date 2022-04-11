@@ -30,11 +30,11 @@
 
 ## cancellation_details party yoo_kassa
 
-В причинах ошибки или отмены платежа в уведомлении о платеже или ответе на GET запрос изменение:
+[В причинах ошибки или отмены платежа](https://yookassa.ru/developers/payment-acceptance/after-the-payment/declined-payments#cancellation-details-party) в уведомлении о платеже или ответе на GET запрос, следующее изменение:
 
 ```
 - "party" : "yandex_checkout"
-+ "party" : "yoo_kassa"
++ "party" : "yoo_money"
 ```
 
 ## SDK
