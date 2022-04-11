@@ -25,7 +25,7 @@
 
 <details><summary>OLD POST payment.yandex.ru</summary>
     
-```
+```CSS
 ### yandex_money
 POST https://payment.yandex.ru/v3/payments
 authorization: Basic {{token}}
@@ -50,7 +50,7 @@ content-type: application/json
 
 <details><summary>NEW POST api.yookassa.ru</summary>
 
-```
+```CSS
 ### yoo_money
 POST https://api.yookassa.ru/v3/payments
 authorization: Basic {{token}}
