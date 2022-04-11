@@ -48,7 +48,7 @@ content-type: application/json
 ```
 </details>
 
-<details><summary>NEW POST https://api.yookassa.ru/v3/payments yoo_money</summary>
+<details><summary>NEW POST api.yookassa.ru</summary>
 
 ```
 ### yoo_money
