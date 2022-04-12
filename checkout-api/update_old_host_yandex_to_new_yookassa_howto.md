@@ -105,7 +105,7 @@ content-type: application/json
 - "party" : "yandex_checkout"
 + "party" : "yoo_money"
 ```
-===
+---
 
 ## SDK
 
@@ -127,7 +127,7 @@ content-type: application/json
 ## CMS
 
 1. Если у вас CMS, найдите инструкцию на нашем сайте https://yookassa.ru/integration/:
-> ![image](/i/how-to-find-yookassa-cms-module-v2.png)
+![image](/i/how-to-find-yookassa-cms-module-v2.png)
 2. Прочитайте инструкцию по установке, настройке, скачайте обновленный модуль и установите его. Или выполните обновление так, как это делается для вашей CMS.
 
 ## Старые и новые хосты
