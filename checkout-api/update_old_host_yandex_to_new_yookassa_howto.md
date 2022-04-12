@@ -28,7 +28,17 @@
 
 >> Эта информация только для разработчиков вашего ПО, кто будет выполнять обновление.
 
-##  payment_method_data yoo_money vs yandex_money
+## Замена API endpoint
+
+Если Вы не используете готовое SDK (см. ниже), а код вашего сайта в части работы с ЮKassa написан вашим разработчиком самостоятельно.
+
+В коде вашего ПО замените:
+```
+- old API endpoint: https://payment.yandex.net/api/v3/
++ new API endpoint: https://api.yookassa.ru/v3/
+```
+
+## Замена payment_method_data yandex_money
 
 При переходе с хоста payment.yandex.net на api.yookassa.ru меняется название платежного метода `"yandex_money"` на `"yoo_money"`. Если вы не используете этот платежныный метод, можете пропустить этот блок информации.
 
@@ -88,7 +98,7 @@ content-type: application/json
    * Важный момент: если вы создали платёж `"yandex_money"` со старым URL (https://payment.yandex.net/api/v3/), уведомления по этому платежу будут без изменений (метод платежа будет `"yandex_money"`). Но если сделать запрос на новый хост (`GET https://api.yookassa.ru/v3/payments/{{id}}`), в ответе вы получили метод с новым названием — `"yoo_money"`.
    * Если отправить запрос на создание платежа платежным методом `"yandex_money"` (старое название) на новый хост https://api.yookassa.ru/api/v3/, вы получите ошибку, что такого метода не существует. Поэтому на новый хост нужно отправлять запрос только с новым названием метода -- `"yoo_money"`.
 
-## cancellation_details party yoo_money
+## Замена cancellation_details party yoo_money
 
 [В причинах ошибки или отмены платежа](https://yookassa.ru/developers/payment-acceptance/after-the-payment/declined-payments#cancellation-details-party) в уведомлении о платеже или ответе на GET запрос, следующее изменение:
 
@@ -96,6 +106,7 @@ content-type: application/json
 - "party" : "yandex_checkout"
 + "party" : "yoo_money"
 ```
+===
 
 ## SDK
 
@@ -119,18 +130,6 @@ content-type: application/json
 1. Если у вас CMS, найдите инструкцию на нашем сайте https://yookassa.ru/integration/:
 > ![image](/i/how-to-find-yookassa-cms-module-v2.png)
 2. Прочитайте инструкцию по установке, настройке, скачайте обновленный модуль и установите его. Или выполните обновление так, как это делается для вашей CMS.
-
-## Cамописное ПО
-
-Вы не используете готовое SDK (см. выше), а код вашего сайта в части работы с ЮKassa написан вашим разработчиком самостоятельно.
-
->> Смена хоста на новый - это единственное изменение, которое требуется внести в код вашей системы.
-
-В коде вашего ПО замените
-```
-- old API endpoint: https://payment.yandex.net/api/v3/
-+ new API endpoint: https://api.yookassa.ru/v3/
-```
 
 ## Старые и новые хосты
 
