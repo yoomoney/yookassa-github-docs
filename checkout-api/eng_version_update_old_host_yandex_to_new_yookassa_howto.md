@@ -11,13 +11,101 @@
  
 ### Briefly about what needs to be done
 ```
-- old API endpoint: https://payment.yandex.net/api/v3/
-+ new API endpoint: https://api.yookassa.ru/v3/
+# API endpoint
+- old: https://payment.yandex.net/api/v3/
++ new: https://api.yookassa.ru/v3/
+
+# payment_method_data
+- "yandex_money"
++ "yoo_money"
+
+# cancellation_details
+- "party" : "yandex_checkout"
++ "party" : "yoo_money"
 ```
 
 # Answers to Questions
 
 >> This information is for your software developers only, who will perform the update.
+
+## Endpoint API replacement
+
+If you are not using the [SDK](#sdk) (see below) and your site code is written by your developer. In the code of your software replace:
+
+```
+- old API endpoint: https://payment.yandex.net/api/v3/
++ new API endpoint: https://api.yookassa.ru/v3/
+```
+
+## Replacing payment_method_data yandex_money
+
+When switching from payment.yandex.net host to api.yookassa.ru, the name of the payment method `"yandex_money"` changes to `"yoo_money"`. If you don't use this payment method, you can skip this block of information.
+
+<details><summary>OLD POST payment.yandex.ru</summary>
+    
+```CSS
+### yandex_money
+POST https://payment.yandex.ru/v3/payments
+authorization: Basic {{token}}
+idempotence-key: {{$guid}}
+content-type: application/json
+
+{
+    "amount": {
+        "value": "10.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "yandex_money"
+    },
+    "confirmation": {
+        "type": "redirect",
+        "return_url": "https://url.to.you_return_page"
+    }
+}
+```
+</details>
+
+<details><summary>NEW POST api.yookassa.ru</summary>
+ 
+> Upgrade to transfer requests to the new host, pass us `yoo_money` if payment by [e-wallet YooMoney](https://yookassa.ru/en/developers/payment-acceptance/integration-scenarios/manual-integration/yoo-money) is required.
+
+ ```CSS
+### yoo_money
+POST https://api.yookassa.ru/v3/payments
+authorization: Basic {{token}}
+idempotence-key: {{$guid}}
+content-type: application/json
+
+{
+    "amount": {
+        "value": "10.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "yoo_money"
+    },
+    "confirmation": {
+        "type": "redirect",
+        "return_url": "https://url.to.you_return_page"
+    }
+}
+```
+</details>
+
+   * In payment notifications by the `yoo_money` method, as well as in our response to your GET request, in the payment object, you will receive `yoo_money`.
+   * Important point: if you created payment `"yandex_money"` with old URL (https://payment.yandex.net/api/v3/), notifications on this payment will be unchanged (payment method will be `"yandex_money"`). But if you make a request to a new host (`GET https://api.yookassa.ru/v3/payments/{{id}}`), you will get a method with a new name - `"yoo_money"`.
+   * If you send a request for creating a payment by the payment method `"yandex_money"` (the old name) to a new host https://api.yookassa.ru/api/v3/, you will get an error that there is no such method. That's why you should send a request to the new host only with the new method name -- `"yoo_money"`.
+
+## Replacing cancellation_details party yoo_money
+
+[In Reasons for error or payment cancellation](https://yookassa.ru/en/developers/payment-acceptance/after-the-payment/declined-payments#cancellation-details-party) in the payment notification or response to a GET request, the following change:
+
+```
+- "party" : "yandex_checkout"
++ "party" : "yoo_money"
+```
+---
 
 ## SDK
 
